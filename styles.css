@@ -1433,6 +1433,55 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
   .how-final-actions .btn { width: 100%; }
 }
 
+/* ---------- FAQ ---------- */
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.35rem 0;
+  background: none;
+  border: none;
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+}
+.faq-icon { flex-shrink: 0; width: 20px; height: 20px; color: var(--scrub); transition: transform 0.25s ease; }
+.faq-item.is-open .faq-icon { transform: rotate(180deg); }
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  color: var(--slate);
+  font-size: 0.96rem;
+}
+.faq-item.is-open .faq-answer { max-height: 260px; padding-bottom: 1.35rem; }
+
+/* ---------- Trust & ethics ---------- */
+.trust-list { display: flex; flex-direction: column; gap: 0; }
+.trust-item {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 1.1rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.trust-item:last-child { border-bottom: none; }
+.trust-icon {
+  width: 46px; height: 46px; border-radius: 12px;
+  background: var(--scrub-tint); color: var(--scrub);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.trust-icon svg { width: 21px; height: 21px; display: block; }
+.trust-item h3 { font-size: 1.02rem; }
+.trust-item p { margin-top: 0.3rem; color: var(--slate); font-size: 0.93rem; }
+
 /* ==========================================================================
    ABOUT — MENTORO final page polish
    ========================================================================== */
