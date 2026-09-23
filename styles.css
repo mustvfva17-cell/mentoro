@@ -1012,6 +1012,27 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
   .fade-up { opacity: 1; transform: none; }
 }
 
+/* ---------- MENTORO homepage color scope ---------- */
+/* Keep the existing green system for secondary pages, but make the
+   homepage consistently use the MENTORO red palette. */
+.home-page {
+  --scrub: var(--mentoro-red);
+  --scrub-dark: var(--mentoro-red-dark);
+  --scrub-tint: var(--mentoro-red-tint);
+}
+
+.home-page .home-values .value-title {
+  color: #fff;
+}
+
+.home-page .home-physician-panel .btn-primary {
+  background: var(--mentoro-red);
+}
+
+.home-page .home-physician-panel .btn-primary:hover {
+  background: var(--mentoro-red-dark);
+}
+
 /* ---------- Homepage problem / access-gap section ---------- */
 .home-page .problem-section {
   background: var(--surface);
