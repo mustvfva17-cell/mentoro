@@ -1,0 +1,6 @@
+# Cloudflare Pages: clean routes -> static HTML files
+/students /students.html 200
+/physicians /physicians.html 200
+/how-it-works /how-it-works.html 200
+/about /about.html 200
+/admin /admin.html 200
