@@ -1,5 +1,5 @@
 /* ==========================================================================
-   PRECEPTA — Design System
+   MENTORO — Design System
    Display: Bricolage Grotesque · Body: IBM Plex Sans · Utility: IBM Plex Mono
    Ink navy + paper white + a single signature "scrub green" accent, drawn
    from OR scrub/drape green — the platform's one deliberate color risk.
@@ -804,6 +804,186 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
 }
 @media (max-width: 560px) {
   .footer-top { grid-template-columns: 1fr; }
+}
+
+
+/* ---------- MENTORO homepage: experience / values / CTA polish ---------- */
+.home-page .home-experience-head {
+  max-width: 760px;
+}
+.home-page .home-experience-head .eyebrow,
+.home-page .home-values-head .eyebrow,
+.home-page .home-physician-panel .eyebrow {
+  color: var(--mentoro-red);
+}
+.home-page .home-experience-head .eyebrow::before,
+.home-page .home-values-head .eyebrow::before,
+.home-page .home-physician-panel .eyebrow::before {
+  background: var(--mentoro-red);
+}
+.home-page .home-experience-head .section-subtitle {
+  max-width: 62ch;
+  margin-top: 0.95rem;
+}
+.home-page .home-experience .grid {
+  gap: 1rem;
+}
+.home-page .home-experience-card {
+  position: relative;
+  min-height: 238px;
+  padding: 2rem;
+  overflow: hidden;
+}
+.home-page .home-experience-card::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  right: -72px;
+  bottom: -78px;
+  background: radial-gradient(circle, rgba(169,35,50,0.11), transparent 68%);
+  pointer-events: none;
+}
+.home-page .home-card-index {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--slate-light);
+}
+.home-page .home-experience-card .card-icon {
+  background: var(--mentoro-red-tint);
+  color: var(--mentoro-red);
+  margin-bottom: 1.35rem;
+}
+.home-page .home-experience-card:hover .card-icon {
+  background: var(--mentoro-red);
+  color: #fff;
+}
+.home-page .home-experience-card .card-title {
+  max-width: 16ch;
+  font-size: 1.16rem;
+}
+.home-page .home-experience-card .card-text {
+  max-width: 34ch;
+}
+.home-page .home-experience .note {
+  background: var(--mentoro-red-tint);
+  border-color: #ECC9CE;
+  color: var(--mentoro-red-dark);
+}
+.home-page .home-experience .note svg {
+  color: var(--mentoro-red);
+}
+
+.home-page .home-values {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(169,35,50,0.18), transparent 34%),
+    var(--ink);
+}
+.home-page .home-values-head {
+  max-width: 700px;
+}
+.home-page .home-values-head .section-title {
+  color: #fff;
+}
+.home-page .home-value-grid {
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+.home-page .home-value-item {
+  min-height: 190px;
+  padding: 2rem 2rem 2rem 0;
+  align-items: flex-start;
+}
+.home-page .home-value-item + .home-value-item {
+  border-left: 1px solid rgba(255,255,255,0.12);
+  padding-left: 2rem;
+}
+.home-page .home-value-item .value-icon {
+  color: var(--mentoro-red);
+  border-color: rgba(169,35,50,0.4);
+  background: rgba(169,35,50,0.08);
+}
+.home-page .home-value-item .value-text {
+  max-width: 33ch;
+}
+
+.home-page .home-physicians {
+  background: var(--paper);
+}
+.home-page .home-physician-panel {
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: var(--shadow-lg);
+}
+.home-page .home-physician-panel::after {
+  background: radial-gradient(circle, rgba(169,35,50,0.28), transparent 70%);
+}
+.home-page .home-physician-panel .split-list svg {
+  color: var(--mentoro-red);
+}
+.home-page .home-physician-panel .split-note {
+  color: rgba(255,255,255,0.5);
+}
+
+.home-page .home-final-cta {
+  background: var(--surface);
+}
+.home-page .home-cta-band {
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.home-page .home-cta-band::before {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(169,35,50,0.42), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(169,35,50,0.22), transparent 40%);
+}
+.home-page .home-cta-band .btn-primary {
+  background: var(--mentoro-red);
+}
+.home-page .home-cta-band .btn-primary:hover {
+  background: var(--mentoro-red-dark);
+}
+.home-page .home-cta-band .btn-outline.on-dark:hover {
+  color: #fff;
+  border-color: var(--mentoro-red);
+}
+
+.home-page .home-footer .footer-col a:hover {
+  color: var(--mentoro-red);
+}
+.home-page .home-footer .footer-social a:hover {
+  border-color: var(--mentoro-red);
+  color: var(--mentoro-red);
+}
+
+@media (max-width: 900px) {
+  .home-page .home-value-item,
+  .home-page .home-value-item + .home-value-item {
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding: 1.6rem 0;
+    min-height: auto;
+  }
+  .home-page .home-value-item:first-child {
+    border-top: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-page .home-experience-card {
+    min-height: 0;
+    padding: 1.7rem;
+  }
+  .home-page .home-card-index {
+    top: 1.05rem;
+    right: 1.1rem;
+  }
 }
 
 /* ---------- Misc utilities ---------- */
