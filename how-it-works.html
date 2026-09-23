@@ -3,34 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How It Works — Precepta</title>
-<meta name="description" content="See how trainees and physicians move through Precepta, step by step — and browse sample mentor profiles to see what the platform will look like.">
+<title>How It Works — MENTORO</title>
+<meta name="description" content="See how MENTORO connects medical students, junior doctors, and physicians through structured clinical mentorship and real-world learning experiences.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="how-page">
 
 <header class="nav">
   <div class="nav-inner">
-    <a href="/" class="brand">
+    <a href="/" class="brand" aria-label="MENTORO home">
       <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-        <rect x="1" y="1" width="30" height="30" rx="9" fill="#345A4B"/>
+        <rect x="1" y="1" width="30" height="30" rx="9" fill="#A92332"/>
         <path d="M7 17h4l2.5-6 3 10 2.5-7h6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      Precepta
+      MENTORO
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Primary navigation">
       <a href="/">Home</a>
       <a href="/students">For Students</a>
       <a href="/physicians">For Physicians</a>
-      <a href="/how-it-works">How It Works</a>
+      <a href="/how-it-works" aria-current="page">How It Works</a>
       <a href="/about">About Us</a>
     </nav>
     <div class="nav-actions">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-outline">Join as a Student</a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCTYcB18Kz4dYvUc7XZ0g9CCyFnq5Nvrw-N_ai-8kNITTs9A/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary">Become a Mentor</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-outline">Join as a Student</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCTYcB18Kz4dYvUc7XZ0g9CCyFnq5Nvrw-N_ai-8kNITTs9A/viewform?usp=sharing&ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary">Become a Mentor</a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
         <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
       </button>
@@ -42,302 +42,205 @@
   <a href="/">Home</a>
   <a href="/students">For Students</a>
   <a href="/physicians">For Physicians</a>
-  <a href="/how-it-works">How It Works</a>
+  <a href="/how-it-works" aria-current="page">How It Works</a>
   <a href="/about">About Us</a>
   <div class="cta-row">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-outline btn-block">Join as a Student</a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCTYcB18Kz4dYvUc7XZ0g9CCyFnq5Nvrw-N_ai-8kNITTs9A/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary btn-block">Become a Mentor</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-outline btn-block">Join as a Student</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCTYcB18Kz4dYvUc7XZ0g9CCyFnq5Nvrw-N_ai-8kNITTs9A/viewform?usp=sharing&ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary btn-block">Become a Mentor</a>
   </div>
 </div>
 
 <main>
-
   <!-- HERO -->
-  <section class="page-hero">
+  <section class="page-hero how-hero">
     <div class="container">
-      <div class="page-hero-content">
-        <span class="eyebrow">How it works</span>
-        <svg class="pulse-fragment" viewBox="0 0 120 24" aria-hidden="true"><path d="M2,12 C12,2 22,2 32,12 C42,22 52,22 62,12 C72,2 82,2 92,12 C102,22 112,22 118,14"/></svg>
-        <h1 class="page-hero-title">Two paths. One shared goal.</h1>
-        <p class="page-hero-lede">Whether you're requesting mentorship or offering it, the process is simple, transparent, and built around what you're comfortable with.</p>
+      <div class="how-hero-grid">
+        <div class="page-hero-content">
+          <span class="eyebrow">How it works</span>
+          <svg class="pulse-fragment" viewBox="0 0 120 24" aria-hidden="true"><path d="M2,12 C12,2 22,2 32,12 C42,22 52,22 62,12 C72,2 82,2 92,12 C102,22 112,22 118,14"/></svg>
+          <h1 class="page-hero-title">A clear path into clinical mentorship.</h1>
+          <p class="page-hero-lede">MENTORO keeps the process simple: tell us what you want to explore, tell us how you can contribute, and take part in an experience shaped by the people and setting involved.</p>
+          <div class="cta-row page-hero-actions">
+            <a href="#paths" class="btn btn-primary btn-lg">See the two paths</a>
+            <a href="#profiles" class="btn btn-outline btn-lg">See mentor samples</a>
+          </div>
+        </div>
+        <aside class="how-hero-panel" aria-label="MENTORO process overview">
+          <span class="how-panel-label">The MENTORO approach</span>
+          <div class="how-panel-flow">
+            <div><span>01</span><strong>Explore</strong><p>Know what you want to learn.</p></div>
+            <div><span>02</span><strong>Apply</strong><p>Share your goals through the relevant form.</p></div>
+            <div><span>03</span><strong>Experience</strong><p>Learn within the agreed clinical setting.</p></div>
+          </div>
+          <p class="how-panel-note">Activities depend on the physician, setting, institutional rules, and patient consent.</p>
+        </aside>
       </div>
     </div>
   </section>
 
-  <!-- TWO PATHWAYS -->
-  <section class="section section-alt">
+  <!-- TWO PATHS -->
+  <section class="section section-alt how-paths" id="paths">
     <div class="container">
-      <div class="grid grid-2" style="gap: 3.5rem; align-items: start;">
+      <div class="section-head how-section-head">
+        <span class="eyebrow">Choose your path</span>
+        <h2 class="section-title">Two audiences. One shared learning goal.</h2>
+        <p class="section-subtitle">The starting point is different, but both sides shape the experience around clear expectations and appropriate clinical boundaries.</p>
+      </div>
 
-        <div>
-          <div class="pathway-head">
-            <div class="pathway-head-icon">
+      <div class="grid grid-2 how-path-grid">
+        <article class="how-path-card">
+          <div class="how-path-top">
+            <div class="how-path-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
             </div>
-            <h3>For Trainees</h3>
+            <div><span class="how-path-kicker">For students &amp; junior doctors</span><h3>Come ready to learn.</h3></div>
           </div>
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="timeline-number">01</span>
-              <h4 class="timeline-title">Create your profile</h4>
-              <p class="timeline-text">Tell us about your background, interests, and what you're hoping to learn.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-number">02</span>
-              <h4 class="timeline-title">Explore mentors</h4>
-              <p class="timeline-text">Browse specialists and consultants by specialty, city, and availability.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-number">03</span>
-              <h4 class="timeline-title">Choose an experience</h4>
-              <p class="timeline-text">Pick the type of mentorship that fits your goals — shadowing, discussion, or guidance.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-number">04</span>
-              <h4 class="timeline-title">Submit a request</h4>
-              <p class="timeline-text">Send a request with your availability and what you'd like to focus on.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-number">05</span>
-              <h4 class="timeline-title">Attend the mentorship experience</h4>
-              <p class="timeline-text">Meet your mentor and take part in the agreed clinical activity.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-number">06</span>
-              <h4 class="timeline-title">Learn and receive guidance</h4>
-              <p class="timeline-text">Ask questions, reflect on the experience, and plan your next step.</p>
-            </div>
-          </div>
-        </div>
+          <ol class="how-process-list">
+            <li><span>01</span><div><strong>Choose what you want to explore</strong><p>Think about the specialty, clinical environment, or questions you want to understand better.</p></div></li>
+            <li><span>02</span><div><strong>Complete the student application</strong><p>Share your background, interests, and the kind of mentorship experience you are looking for through Google Forms.</p></div></li>
+            <li><span>03</span><div><strong>Set clear expectations</strong><p>The experience depends on the mentor, setting, availability, institutional rules, and what is appropriate for patients.</p></div></li>
+            <li><span>04</span><div><strong>Learn through the experience</strong><p>Observe, ask questions, discuss cases, and use the experience to sharpen your understanding of the specialty.</p></div></li>
+          </ol>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary">Join as a Student</a>
+        </article>
 
-        <div>
-          <div class="pathway-head">
-            <div class="pathway-head-icon">
+        <article class="how-path-card how-path-card-dark">
+          <div class="how-path-top">
+            <div class="how-path-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="3"/></svg>
             </div>
-            <h3>For Physicians</h3>
+            <div><span class="how-path-kicker">For physicians</span><h3>Share what you know.</h3></div>
           </div>
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="timeline-number">01</span>
-              <h4 class="timeline-title">Apply as a mentor</h4>
-              <p class="timeline-text">Tell us about your specialty, experience, and how you'd like to contribute.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-number">02</span>
-              <h4 class="timeline-title">Create your professional profile</h4>
-              <p class="timeline-text">Showcase your background, interests, and the experiences you offer.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-number">03</span>
-              <h4 class="timeline-title">Choose your availability and experience type</h4>
-              <p class="timeline-text">Set the days, format, and activities you're comfortable providing.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-number">04</span>
-              <h4 class="timeline-title">Review suitable trainee requests</h4>
-              <p class="timeline-text">See requests from motivated students and junior doctors that match your profile.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-number">05</span>
-              <h4 class="timeline-title">Provide mentorship</h4>
-              <p class="timeline-text">Host the agreed session on your terms, in your own clinic or theatre.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-number">06</span>
-              <h4 class="timeline-title">Receive compensation for your time</h4>
-              <p class="timeline-text">Get compensated for the time, supervision, and mentorship you provide.</p>
-            </div>
-          </div>
-        </div>
-
+          <ol class="how-process-list">
+            <li><span>01</span><div><strong>Apply as a mentor</strong><p>Tell us about your specialty, experience, and how you would like to contribute.</p></div></li>
+            <li><span>02</span><div><strong>Share what you are comfortable offering</strong><p>Describe the experiences, conversations, or clinical exposure you are open to providing.</p></div></li>
+            <li><span>03</span><div><strong>Set your boundaries</strong><p>Availability, scope, institutional policies, and patient consent remain part of every experience.</p></div></li>
+            <li><span>04</span><div><strong>Mentor on agreed terms</strong><p>Use your clinical environment and experience to give a learner a closer, more informed look at your specialty.</p></div></li>
+          </ol>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCTYcB18Kz4dYvUc7XZ0g9CCyFnq5Nvrw-N_ai-8kNITTs9A/viewform?usp=sharing&ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary">Become a Mentor</a>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- SAMPLE MENTOR PROFILES -->
-  <section id="profiles" class="section">
+  <!-- EXPERIENCE FLOW -->
+  <section class="section how-experience">
     <div class="container">
-      <div class="section-head center">
-        <span class="eyebrow">See it in action</span>
-        <h2 class="section-title">What a mentor profile looks like.</h2>
-        <p class="section-subtitle">A preview of the future marketplace. These are illustrative sample profiles created to demonstrate the platform — not real physicians.</p>
+      <div class="section-head how-section-head">
+        <span class="eyebrow">Inside the experience</span>
+        <h2 class="section-title">Before. During. After.</h2>
+        <p class="section-subtitle">Clinical mentorship is more useful when expectations are clear before the session and reflection continues after it.</p>
       </div>
-
-      <div class="grid grid-3">
-
-        <div class="profile-card">
-          <span class="profile-badge">Sample Profile — For Demonstration</span>
-          <div class="profile-top">
-            <div class="profile-avatar">AM</div>
-            <div>
-              <h3 class="profile-name">Dr. Ahmed Mohamed</h3>
-              <p class="profile-role">Consultant Cardiothoracic Surgery</p>
-              <p class="profile-years">15+ years clinical experience</p>
-            </div>
-          </div>
-          <p class="profile-section-label">Special interests</p>
-          <div class="tag-row">
-            <span class="tag">Adult cardiac surgery</span>
-            <span class="tag">Coronary artery bypass</span>
-            <span class="tag">Valve surgery</span>
-          </div>
-          <p class="profile-section-label">Mentorship experiences</p>
-          <div class="tag-row">
-            <span class="tag">Clinic shadowing</span>
-            <span class="tag">OR observation</span>
-            <span class="tag">Case discussion</span>
-            <span class="tag">Career mentorship</span>
-          </div>
-          <div class="profile-meta-row">
-            <span class="profile-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="16" rx="2"/><line x1="3.5" y1="10" x2="20.5" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg> Sat / Tue</span>
-            <span class="profile-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 16,14"/></svg> 4-hour session</span>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-outline btn-block">Request an Experience</a>
-        </div>
-
-        <div class="profile-card">
-          <span class="profile-badge">Sample Profile — For Demonstration</span>
-          <div class="profile-top">
-            <div class="profile-avatar">MY</div>
-            <div>
-              <h3 class="profile-name">Dr. Mona Youssef</h3>
-              <p class="profile-role">Consultant ENT (Otolaryngology)</p>
-              <p class="profile-years">12+ years clinical experience</p>
-            </div>
-          </div>
-          <p class="profile-section-label">Special interests</p>
-          <div class="tag-row">
-            <span class="tag">Sinus &amp; nasal surgery</span>
-            <span class="tag">Pediatric ENT</span>
-            <span class="tag">Hearing &amp; balance</span>
-          </div>
-          <p class="profile-section-label">Mentorship experiences</p>
-          <div class="tag-row">
-            <span class="tag">Clinic shadowing</span>
-            <span class="tag">Case discussion</span>
-            <span class="tag">Career mentorship</span>
-          </div>
-          <div class="profile-meta-row">
-            <span class="profile-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="16" rx="2"/><line x1="3.5" y1="10" x2="20.5" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg> Sun / Wed</span>
-            <span class="profile-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 16,14"/></svg> 3-hour session</span>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-outline btn-block">Request an Experience</a>
-        </div>
-
-        <div class="profile-card">
-          <span class="profile-badge">Sample Profile — For Demonstration</span>
-          <div class="profile-top">
-            <div class="profile-avatar">KE</div>
-            <div>
-              <h3 class="profile-name">Dr. Karim El-Sayed</h3>
-              <p class="profile-role">General Surgery Specialist</p>
-              <p class="profile-years">10+ years clinical experience</p>
-            </div>
-          </div>
-          <p class="profile-section-label">Special interests</p>
-          <div class="tag-row">
-            <span class="tag">Laparoscopic surgery</span>
-            <span class="tag">Hernia repair</span>
-            <span class="tag">Emergency surgery</span>
-          </div>
-          <p class="profile-section-label">Mentorship experiences</p>
-          <div class="tag-row">
-            <span class="tag">Clinic shadowing</span>
-            <span class="tag">OR observation</span>
-            <span class="tag">Case discussion</span>
-          </div>
-          <div class="profile-meta-row">
-            <span class="profile-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="16" rx="2"/><line x1="3.5" y1="10" x2="20.5" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg> Mon / Thu</span>
-            <span class="profile-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 16,14"/></svg> 4-hour session</span>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-outline btn-block">Request an Experience</a>
-        </div>
-
-        <div class="profile-card">
-          <span class="profile-badge">Sample Profile — For Demonstration</span>
-          <div class="profile-top">
-            <div class="profile-avatar">SA</div>
-            <div>
-              <h3 class="profile-name">Dr. Salma Adel</h3>
-              <p class="profile-role">Consultant Cardiology</p>
-              <p class="profile-years">14+ years clinical experience</p>
-            </div>
-          </div>
-          <p class="profile-section-label">Special interests</p>
-          <div class="tag-row">
-            <span class="tag">Interventional cardiology</span>
-            <span class="tag">Heart failure</span>
-            <span class="tag">Preventive cardiology</span>
-          </div>
-          <p class="profile-section-label">Mentorship experiences</p>
-          <div class="tag-row">
-            <span class="tag">Clinic shadowing</span>
-            <span class="tag">Case discussion</span>
-            <span class="tag">Specialty exploration</span>
-            <span class="tag">Career mentorship</span>
-          </div>
-          <div class="profile-meta-row">
-            <span class="profile-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="16" rx="2"/><line x1="3.5" y1="10" x2="20.5" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg> Tue / Sat</span>
-            <span class="profile-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 16,14"/></svg> 3-hour session</span>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-outline btn-block">Request an Experience</a>
-        </div>
-
-        <div class="profile-card">
-          <span class="profile-badge">Sample Profile — For Demonstration</span>
-          <div class="profile-top">
-            <div class="profile-avatar">TH</div>
-            <div>
-              <h3 class="profile-name">Dr. Tarek Hassan</h3>
-              <p class="profile-role">Orthopedic Surgery Specialist</p>
-              <p class="profile-years">11+ years clinical experience</p>
-            </div>
-          </div>
-          <p class="profile-section-label">Special interests</p>
-          <div class="tag-row">
-            <span class="tag">Sports injuries</span>
-            <span class="tag">Joint replacement</span>
-            <span class="tag">Trauma surgery</span>
-          </div>
-          <p class="profile-section-label">Mentorship experiences</p>
-          <div class="tag-row">
-            <span class="tag">Clinic shadowing</span>
-            <span class="tag">OR observation</span>
-            <span class="tag">Career mentorship</span>
-          </div>
-          <div class="profile-meta-row">
-            <span class="profile-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="16" rx="2"/><line x1="3.5" y1="10" x2="20.5" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg> Wed / Fri</span>
-            <span class="profile-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 16,14"/></svg> 4-hour session</span>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-outline btn-block">Request an Experience</a>
-        </div>
-
-        <div class="card-flat" style="display:flex; flex-direction:column; align-items:flex-start; justify-content:center;">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><line x1="8.3" y1="10.8" x2="15.8" y2="7.2"/><line x1="8.3" y1="13.2" x2="15.8" y2="16.8"/></svg>
-          </div>
-          <h3 class="card-title">More specialties are joining</h3>
-          <p class="card-text">We're onboarding mentors across Egypt, one specialty at a time. If you're a physician, you can be one of the first.</p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCTYcB18Kz4dYvUc7XZ0g9CCyFnq5Nvrw-N_ai-8kNITTs9A/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:1.25rem;">Become a Mentor</a>
-        </div>
-
+      <div class="how-phase-grid">
+        <article class="how-phase-card">
+          <span class="how-phase-number">01</span>
+          <span class="how-phase-label">Before</span>
+          <h3>Know what you're there to learn.</h3>
+          <p>Start with a clear goal: a specialty you want to explore, a clinical question you want to understand, or a perspective you want to gain.</p>
+        </article>
+        <article class="how-phase-card how-phase-card-featured">
+          <span class="how-phase-number">02</span>
+          <span class="how-phase-label">During</span>
+          <h3>Observe. Discuss. Ask.</h3>
+          <p>The experience may include clinical observation, case discussion, investigation interpretation, career guidance, or appropriate OR exposure.</p>
+        </article>
+        <article class="how-phase-card">
+          <span class="how-phase-number">03</span>
+          <span class="how-phase-label">After</span>
+          <h3>Turn exposure into clarity.</h3>
+          <p>Reflect on what you saw, what you learned, and whether the experience changed the questions you want to explore next.</p>
+        </article>
+      </div>
+      <div class="how-boundary-note">
+        <strong>Clinical boundaries matter.</strong>
+        <span>MENTORO facilitates mentorship; it does not replace formal medical education or the physician's professional responsibilities. Participation remains subject to consent, policy, and applicable rules.</span>
       </div>
     </div>
   </section>
 
+  <!-- SAMPLE PROFILES -->
+  <section class="section section-dark how-profiles" id="profiles">
+    <div class="container">
+      <div class="section-head center how-profile-head">
+        <span class="eyebrow on-dark">See mentor samples</span>
+        <h2 class="section-title">What a mentor profile could look like.</h2>
+        <p class="section-subtitle">These are illustrative sample profiles created to demonstrate the kind of information a learner could use when exploring mentors. They are not real physicians.</p>
+      </div>
+
+      <div class="grid grid-3 how-profile-grid">
+        <article class="profile-card how-profile-card">
+          <span class="profile-badge">Illustrative sample</span>
+          <div class="profile-top"><div class="profile-avatar">AM</div><div><h3 class="profile-name">Dr. Ahmed Mohamed</h3><p class="profile-role">Consultant Cardiothoracic Surgery</p><p class="profile-years">15+ years clinical experience</p></div></div>
+          <p class="profile-section-label">Special interests</p><div class="tag-row"><span class="tag">Adult cardiac surgery</span><span class="tag">Coronary artery bypass</span><span class="tag">Valve surgery</span></div>
+          <p class="profile-section-label">Mentorship experiences</p><div class="tag-row"><span class="tag">Clinic shadowing</span><span class="tag">OR observation</span><span class="tag">Case discussion</span><span class="tag">Career mentorship</span></div>
+        </article>
+
+        <article class="profile-card how-profile-card">
+          <span class="profile-badge">Illustrative sample</span>
+          <div class="profile-top"><div class="profile-avatar">MY</div><div><h3 class="profile-name">Dr. Mona Youssef</h3><p class="profile-role">Consultant ENT (Otolaryngology)</p><p class="profile-years">12+ years clinical experience</p></div></div>
+          <p class="profile-section-label">Special interests</p><div class="tag-row"><span class="tag">Sinus &amp; nasal surgery</span><span class="tag">Pediatric ENT</span><span class="tag">Hearing &amp; balance</span></div>
+          <p class="profile-section-label">Mentorship experiences</p><div class="tag-row"><span class="tag">Clinic shadowing</span><span class="tag">Case discussion</span><span class="tag">Career mentorship</span></div>
+        </article>
+
+        <article class="profile-card how-profile-card">
+          <span class="profile-badge">Illustrative sample</span>
+          <div class="profile-top"><div class="profile-avatar">KE</div><div><h3 class="profile-name">Dr. Karim El-Sayed</h3><p class="profile-role">General Surgery Specialist</p><p class="profile-years">10+ years clinical experience</p></div></div>
+          <p class="profile-section-label">Special interests</p><div class="tag-row"><span class="tag">Laparoscopic surgery</span><span class="tag">Hernia repair</span><span class="tag">Emergency surgery</span></div>
+          <p class="profile-section-label">Mentorship experiences</p><div class="tag-row"><span class="tag">Clinic shadowing</span><span class="tag">OR observation</span><span class="tag">Case discussion</span></div>
+        </article>
+
+        <article class="profile-card how-profile-card">
+          <span class="profile-badge">Illustrative sample</span>
+          <div class="profile-top"><div class="profile-avatar">SA</div><div><h3 class="profile-name">Dr. Salma Adel</h3><p class="profile-role">Consultant Cardiology</p><p class="profile-years">14+ years clinical experience</p></div></div>
+          <p class="profile-section-label">Special interests</p><div class="tag-row"><span class="tag">Interventional cardiology</span><span class="tag">Heart failure</span><span class="tag">Preventive cardiology</span></div>
+          <p class="profile-section-label">Mentorship experiences</p><div class="tag-row"><span class="tag">Clinic shadowing</span><span class="tag">Case discussion</span><span class="tag">Specialty exploration</span><span class="tag">Career mentorship</span></div>
+        </article>
+
+        <article class="profile-card how-profile-card">
+          <span class="profile-badge">Illustrative sample</span>
+          <div class="profile-top"><div class="profile-avatar">TH</div><div><h3 class="profile-name">Dr. Tarek Hassan</h3><p class="profile-role">Orthopedic Surgery Specialist</p><p class="profile-years">11+ years clinical experience</p></div></div>
+          <p class="profile-section-label">Special interests</p><div class="tag-row"><span class="tag">Sports injuries</span><span class="tag">Joint replacement</span><span class="tag">Trauma surgery</span></div>
+          <p class="profile-section-label">Mentorship experiences</p><div class="tag-row"><span class="tag">Clinic shadowing</span><span class="tag">OR observation</span><span class="tag">Career mentorship</span></div>
+        </article>
+
+        <article class="how-profile-more">
+          <div class="how-profile-more-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><line x1="8.3" x2="15.8" y1="10.8" y2="7.2"/><line x1="8.3" x2="15.8" y1="13.2" y2="16.8"/></svg>
+          </div>
+          <span class="how-profile-more-label">Growing network</span>
+          <h3>More specialties can join.</h3>
+          <p>These examples show the breadth of mentorship MENTORO is designed to support. The live experience depends on participating physicians and settings.</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCTYcB18Kz4dYvUc7XZ0g9CCyFnq5Nvrw-N_ai-8kNITTs9A/viewform?usp=sharing&ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary">Become a Mentor</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section how-final-cta">
+    <div class="container">
+      <div class="how-final-band">
+        <div>
+          <span class="eyebrow">Ready to take the next step?</span>
+          <h2>Start with the path that fits you.</h2>
+          <p>Students can tell us what they want to explore. Physicians can tell us what they are ready to share.</p>
+        </div>
+        <div class="cta-row how-final-actions">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Join as a Student</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCTYcB18Kz4dYvUc7XZ0g9CCyFnq5Nvrw-N_ai-8kNITTs9A/viewform?usp=sharing&ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Become a Mentor</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
       <div>
-        <a href="/" class="footer-brand">
-          <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <rect x="1" y="1" width="30" height="30" rx="9" fill="#345A4B"/>
-            <path d="M7 17h4l2.5-6 3 10 2.5-7h6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          Precepta
+        <a href="/" class="footer-brand" aria-label="MENTORO home">
+          <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="9" fill="#A92332"/><path d="M7 17h4l2.5-6 3 10 2.5-7h6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          MENTORO
         </a>
         <p class="footer-tagline">Connect. Observe. Learn.</p>
         <div class="footer-social">
@@ -346,29 +249,12 @@
           <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M13.5 21v-7h2.2l.3-2.6h-2.5V9.7c0-.75.2-1.3 1.3-1.3h1.4V6.1c-.25 0-1.1-.1-2-.1-2 0-3.4 1.2-3.4 3.5v1.9H8.5v2.6h2v7"/></svg></a>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>Platform</h4>
-        <a href="/students">For Students</a>
-        <a href="/physicians">For Physicians</a>
-        <a href="/how-it-works">How It Works</a>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <a href="/about">About Us</a>
-        <a href="/about#faq">FAQ</a>
-        <a href="/about#contact">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h4>Get started</h4>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener">Join as a Student</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCTYcB18Kz4dYvUc7XZ0g9CCyFnq5Nvrw-N_ai-8kNITTs9A/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener">Become a Mentor</a>
-      </div>
+      <div class="footer-col"><h4>Platform</h4><a href="/students">For Students</a><a href="/physicians">For Physicians</a><a href="/how-it-works">How It Works</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about">About Us</a><a href="/about#faq">FAQ</a><a href="/about#contact">Contact</a></div>
+      <div class="footer-col"><h4>Get Started</h4><a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&ouid=117940045554348383782" target="_blank" rel="noopener">Join as a Student</a><a href="https://docs.google.com/forms/d/e/1FAIpQLSeCTYcB18Kz4dYvUc7XZ0g9CCyFnq5Nvrw-N_ai-8kNITTs9A/viewform?usp=sharing&ouid=117940045554348383782" target="_blank" rel="noopener">Become a Mentor</a></div>
     </div>
-    <p class="footer-disclaimer">Precepta is a mentorship platform. It organizes and facilitates connections between trainees and physicians — it does not provide medical treatment, control clinical decisions, or replace formal medical education.</p>
-    <div class="footer-bottom">
-      <span>© 2026 Precepta. All rights reserved.</span>
-      <span>Made for the medical community in Egypt.</span>
-    </div>
+    <p class="footer-disclaimer">MENTORO is a clinical mentorship platform. It organizes and facilitates connections between learners and physicians — it does not provide medical treatment, control clinical decisions, or replace formal medical education.</p>
+    <div class="footer-bottom"><span>© 2026 MENTORO. All rights reserved.</span><span>Built for learners. Grounded in clinical practice.</span></div>
   </div>
 </footer>
 
