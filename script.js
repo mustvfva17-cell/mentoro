@@ -1,4 +1,4 @@
-// Precepta — shared interactivity
+// MENTORO — shared interactivity
 
 document.addEventListener('DOMContentLoaded', function () {
 

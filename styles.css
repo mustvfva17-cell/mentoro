@@ -78,12 +78,12 @@ h1, h2, h3, h4 {
   line-height: 1.1;
 }
 
-::selection { background: var(--scrub); color: #fff; }
+::selection { background: var(--mentoro-red); color: #fff; }
 
 /* Visible keyboard focus everywhere */
 a:focus-visible, button:focus-visible, input:focus-visible,
 select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
-  outline: 2px solid var(--scrub);
+  outline: 2px solid var(--mentoro-red);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -660,126 +660,6 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
 .profile-meta-item svg { width: 15px; height: 15px; color: var(--scrub); }
 .profile-card .btn { margin-top: 1.5rem; }
 
-/* ---------- Forms ---------- */
-.form-panel {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--r-card);
-  padding: clamp(1.75rem, 4vw, 2.75rem);
-  box-shadow: var(--shadow-sm);
-}
-.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
-.form-grid .full { grid-column: 1 / -1; }
-@media (max-width: 640px) { .form-grid { grid-template-columns: 1fr; } }
-
-.form-group { display: flex; flex-direction: column; gap: 0.45rem; }
-.form-label { font-size: 0.88rem; font-weight: 600; color: var(--ink-soft); }
-.form-label .opt { font-weight: 400; color: var(--slate-light); }
-.form-input, .form-select, .form-textarea {
-  border: 1px solid var(--line-strong);
-  border-radius: var(--r-btn);
-  padding: 0.75rem 0.9rem;
-  font-size: 0.95rem;
-  color: var(--ink);
-  background: var(--paper);
-  transition: border-color 0.18s ease, box-shadow 0.18s ease;
-  width: 100%;
-}
-.form-input:focus, .form-select:focus, .form-textarea:focus {
-  outline: none;
-  border-color: var(--scrub);
-  box-shadow: 0 0 0 3px var(--scrub-tint);
-}
-.form-textarea { resize: vertical; min-height: 90px; }
-.form-select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235B6472' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6,9 12,15 18,9'%3E%3C/polyline%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.85rem center; background-size: 16px; padding-right: 2.5rem; }
-
-.check-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem 1rem; }
-@media (max-width: 500px) { .check-grid { grid-template-columns: 1fr; } }
-.check-item { display: flex; align-items: center; gap: 0.55rem; font-size: 0.92rem; color: var(--ink-soft); }
-.check-item input { accent-color: var(--scrub); width: 16px; height: 16px; flex-shrink: 0; }
-
-.form-consent { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.85rem; color: var(--slate); margin-top: 0.5rem; }
-.form-consent input { accent-color: var(--scrub); margin-top: 0.2rem; flex-shrink: 0; }
-
-.form-foot { margin-top: 1.75rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
-
-.form-success { display: none; text-align: center; padding: 2.5rem 1rem; }
-.form-success.is-visible { display: block; }
-.form-success-icon {
-  width: 56px; height: 56px; border-radius: 50%;
-  background: var(--scrub-tint); color: var(--scrub);
-  display: flex; align-items: center; justify-content: center;
-  margin: 0 auto 1.25rem;
-}
-.form-success-icon svg { width: 26px; height: 26px; }
-.form-success h3 { font-size: 1.3rem; }
-.form-success p { margin-top: 0.6rem; color: var(--slate); max-width: 40ch; margin-left: auto; margin-right: auto; }
-.form.is-hidden { display: none; }
-
-.form-alert {
-  display: flex;
-  gap: 0.7rem;
-  align-items: flex-start;
-  border-radius: var(--r-card-sm);
-  padding: 1rem 1.15rem;
-  font-size: 0.88rem;
-  margin-top: 1.25rem;
-}
-.form-alert svg { width: 18px; height: 18px; flex-shrink: 0; margin-top: 0.1rem; }
-.form-alert p { margin: 0; }
-.form-alert-error {
-  background: var(--error-tint);
-  border: 1px solid var(--error-line);
-  color: var(--error-dark);
-}
-
-/* ---------- FAQ ---------- */
-.faq-item { border-bottom: 1px solid var(--line); }
-.faq-question {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1.35rem 0;
-  background: none;
-  border: none;
-  text-align: left;
-  font-family: var(--font-display);
-  font-size: 1.02rem;
-  font-weight: 600;
-  color: var(--ink);
-}
-.faq-icon { flex-shrink: 0; width: 20px; height: 20px; color: var(--scrub); transition: transform 0.25s ease; }
-.faq-item.is-open .faq-icon { transform: rotate(180deg); }
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-  color: var(--slate);
-  font-size: 0.96rem;
-}
-.faq-item.is-open .faq-answer { max-height: 260px; padding-bottom: 1.35rem; }
-
-/* ---------- Trust & ethics ---------- */
-.trust-list { display: flex; flex-direction: column; gap: 0; }
-.trust-item {
-  display: grid;
-  grid-template-columns: 46px 1fr;
-  gap: 1.1rem;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid var(--line);
-}
-.trust-item:last-child { border-bottom: none; }
-.trust-icon {
-  width: 46px; height: 46px; border-radius: 12px;
-  background: var(--scrub-tint); color: var(--scrub);
-  display: flex; align-items: center; justify-content: center;
-}
-.trust-icon svg { width: 21px; height: 21px; }
-.trust-item h3 { font-size: 1.02rem; }
-.trust-item p { margin-top: 0.3rem; color: var(--slate); font-size: 0.93rem; }
-
 /* ---------- Footer ---------- */
 .footer { background: var(--ink); color: rgba(255,255,255,0.75); padding: clamp(3rem, 6vw, 4.5rem) 0 1.75rem; }
 .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.12); }
@@ -1214,4 +1094,70 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
     border-left: 0;
     border-top: 1px solid var(--line);
   }
+}
+
+/* MENTORO brand rollout — audience pages */
+.students-page,
+.physicians-page {
+  --scrub: var(--mentoro-red);
+  --scrub-dark: var(--mentoro-red-dark);
+  --scrub-tint: var(--mentoro-red-tint);
+}
+.students-page a:focus-visible,
+.students-page button:focus-visible,
+.physicians-page a:focus-visible,
+.physicians-page button:focus-visible { outline-color: var(--mentoro-red); }
+.students-page .eyebrow.on-dark,
+.physicians-page .eyebrow.on-dark { color: #F4C2C9; }
+.students-page .value-icon,
+.physicians-page .value-icon { color: #F4C2C9; }
+.students-page .split-list svg,
+.physicians-page .split-list svg { color: #F4C2C9; }
+.students-page .split-panel::after,
+.physicians-page .split-panel::after {
+  background: radial-gradient(circle, rgba(169,35,50,0.28), transparent 70%);
+}
+.students-page .footer-col a:hover,
+.physicians-page .footer-col a:hover { color: #F4C2C9; }
+.students-page .page-hero-actions,
+.physicians-page .page-hero-actions { margin-top: 1.75rem; }
+.single-column-panel { grid-template-columns: 1fr; }
+.section-actions { margin-top: 1.5rem; }
+
+/* ---------- Google Forms application CTA ---------- */
+.application-section { overflow: hidden; }
+.application-cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: clamp(2rem, 5vw, 3.25rem);
+  box-shadow: var(--shadow-sm);
+}
+.application-cta-copy { max-width: 650px; }
+.application-cta-copy h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  margin-top: 0.7rem;
+}
+.application-cta-copy p {
+  margin-top: 0.85rem;
+  color: var(--slate);
+  max-width: 58ch;
+}
+.application-cta-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  min-width: 210px;
+}
+.application-cta-action .text-fine { max-width: 28ch; }
+@media (max-width: 760px) {
+  .application-cta { grid-template-columns: 1fr; }
+  .application-cta-action { align-items: stretch; min-width: 0; }
+  .application-cta-action .btn { width: 100%; }
+  .application-cta-action .text-fine { max-width: none; }
 }

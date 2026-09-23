@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Students — Precepta</title>
-<meta name="description" content="Discover experienced physicians and request structured clinical mentorship experiences with Precepta — built for medical students, interns, and junior doctors in Egypt.">
+<title>For Students — MENTORO</title>
+<meta name="description" content="Discover structured clinical mentorship experiences with MENTORO — built for medical students, interns, and junior doctors in Egypt.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="students-page">
 
 <header class="nav">
   <div class="nav-inner">
     <a href="/" class="brand">
       <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-        <rect x="1" y="1" width="30" height="30" rx="9" fill="#345A4B"/>
+        <rect x="1" y="1" width="30" height="30" rx="9" fill="#A92332"/>
         <path d="M7 17h4l2.5-6 3 10 2.5-7h6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      Precepta
+      MENTORO
     </a>
     <nav class="nav-links">
       <a href="/">Home</a>
@@ -59,9 +59,9 @@
         <span class="eyebrow">For students &amp; junior doctors</span>
         <svg class="pulse-fragment" viewBox="0 0 120 24" aria-hidden="true"><path d="M2,12 C12,2 22,2 32,12 C42,22 52,22 62,12 C72,2 82,2 92,12 C102,22 112,22 118,14"/></svg>
         <h1 class="page-hero-title">Don't just study a specialty. Experience it.</h1>
-        <p class="page-hero-lede">Discover experienced physicians and request structured mentorship experiences — clinic shadowing, case discussion, OR observation, and honest career guidance.</p>
-        <div class="cta-row" style="margin-top:1.75rem;">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Join the Student Waitlist</a>
+        <p class="page-hero-lede">Discover experienced physicians and explore structured mentorship experiences — clinic shadowing, case discussion, OR observation, and honest career guidance.</p>
+        <div class="cta-row page-hero-actions">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Join as a Student</a>
         </div>
       </div>
     </div>
@@ -102,12 +102,12 @@
   <!-- WHAT YOU CAN EXPERIENCE (recap, linked) -->
   <section class="section">
     <div class="container">
-      <div class="split-panel" style="grid-template-columns: 1fr;">
+      <div class="split-panel single-column-panel">
         <div>
           <span class="eyebrow on-dark">Not sure what you're looking for?</span>
           <h2 style="margin-top:0.6rem; font-size:clamp(1.5rem,2.6vw,2rem);">See the full range of mentorship experiences.</h2>
-          <p style="max-width:56ch;">From clinic shadowing to OR observation and career mentorship — browse what physicians on Precepta can offer before you apply.</p>
-          <div class="cta-row" style="margin-top:1.5rem;">
+          <p style="max-width:56ch;">From clinic shadowing to OR observation and career mentorship — see the kinds of mentorship experiences available through MENTORO.</p>
+          <div class="cta-row section-actions">
             <a href="/how-it-works#profiles" class="btn btn-outline btn-lg on-dark">See Sample Mentor Profiles</a>
           </div>
         </div>
@@ -115,118 +115,18 @@
     </div>
   </section>
 
-  <!-- WAITLIST FORM -->
-  <section id="waitlist" class="section section-alt">
+  <!-- APPLICATION CTA -->
+  <section id="apply" class="section section-alt application-section">
     <div class="container">
-      <div class="section-head center">
-        <span class="eyebrow">Join the student waitlist</span>
-        <h2 class="section-title">Tell us what you're hoping to learn.</h2>
-        <p class="section-subtitle">We'll match your interests to mentors as they join in your city and specialty of interest.</p>
-      </div>
-
-      <div class="form-panel max-w-content" style="margin: 0 auto;">
-        <form id="student-form">
-          <div class="form-grid">
-            <div class="form-group full">
-              <label class="form-label" for="s-name">Full name</label>
-              <input class="form-input" type="text" id="s-name" name="name" required>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="s-email">Email</label>
-              <input class="form-input" type="email" id="s-email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="s-phone">Phone / WhatsApp</label>
-              <input class="form-input" type="tel" id="s-phone" name="phone" required>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="s-school">Medical school</label>
-              <input class="form-input" type="text" id="s-school" name="school" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="s-year">Current year</label>
-              <select class="form-select" id="s-year" name="year" required>
-                <option value="" selected disabled>Select year</option>
-                <option>1st Year</option>
-                <option>2nd Year</option>
-                <option>3rd Year</option>
-                <option>4th Year</option>
-                <option>5th Year</option>
-                <option>6th Year</option>
-                <option>Intern</option>
-                <option>Junior Doctor / Resident</option>
-                <option>Newly Graduated Physician</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="s-city">City</label>
-              <input class="form-input" type="text" id="s-city" name="city" placeholder="e.g. Alexandria" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="s-specialty">Specialty of interest</label>
-              <select class="form-select" id="s-specialty" name="specialty" required>
-                <option value="" selected disabled>Select specialty</option>
-                <option>Cardiology</option>
-                <option>Cardiothoracic Surgery</option>
-                <option>General Surgery</option>
-                <option>ENT (Otolaryngology)</option>
-                <option>Orthopedic Surgery</option>
-                <option>Internal Medicine</option>
-                <option>Pediatrics</option>
-                <option>Obstetrics &amp; Gynecology</option>
-                <option>Dermatology</option>
-                <option>Neurology</option>
-                <option>Psychiatry</option>
-                <option>Radiology</option>
-                <option>Anesthesia</option>
-                <option>Emergency Medicine</option>
-                <option>Not sure yet — exploring</option>
-              </select>
-            </div>
-
-            <div class="form-group full">
-              <label class="form-label">Preferred type of experience</label>
-              <div class="check-grid">
-                <label class="check-item"><input type="checkbox" name="experience_type" value="Clinical Shadowing"> Clinical Shadowing</label>
-                <label class="check-item"><input type="checkbox" name="experience_type" value="Clinic Exposure"> Clinic Exposure</label>
-                <label class="check-item"><input type="checkbox" name="experience_type" value="OR Observation"> OR Observation</label>
-                <label class="check-item"><input type="checkbox" name="experience_type" value="Case Discussion"> Case Discussion</label>
-                <label class="check-item"><input type="checkbox" name="experience_type" value="Specialty Exploration"> Specialty Exploration</label>
-                <label class="check-item"><input type="checkbox" name="experience_type" value="Career Mentorship"> Career Mentorship</label>
-              </div>
-            </div>
-
-            <div class="form-group full">
-              <label class="form-label" for="s-goal">What are you hoping to gain from mentorship?</label>
-              <textarea class="form-textarea" id="s-goal" name="goal" placeholder="e.g. I want to understand what day-to-day life in cardiology is really like before choosing my residency."></textarea>
-            </div>
-          </div>
-
-          <label class="form-consent">
-            <input type="checkbox" id="s-consent" name="consent" required>
-            <span>I agree to be contacted about mentorship opportunities on Precepta.</span>
-          </label>
-
-          <div class="form-alert form-alert-error" hidden>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="13"/><circle cx="12" cy="16.2" r="0.9" fill="currentColor" stroke="none"/></svg>
-            <p></p>
-          </div>
-
-          <div class="form-foot">
-            <button type="submit" class="btn btn-primary btn-lg">Join the Student Waitlist</button>
-            <span class="text-fine">No sensitive medical information is ever required.</span>
-          </div>
-        </form>
-
-        <div class="form-success">
-          <div class="form-success-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6,12.5 10,17 18,7"/></svg>
-          </div>
-          <h3>You're on the list.</h3>
-          <p>We'll email you as soon as mentors in your specialty and city are ready to connect.</p>
+      <div class="application-cta">
+        <div class="application-cta-copy">
+          <span class="eyebrow">Ready to get started?</span>
+          <h2>Take the next step toward real clinical exposure.</h2>
+          <p>Complete the student application through Google Forms and tell us what you would like to explore.</p>
+        </div>
+        <div class="application-cta-action">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Join as a Student</a>
+          <span class="text-fine">You'll complete the application in Google Forms.</span>
         </div>
       </div>
     </div>
@@ -240,10 +140,10 @@
       <div>
         <a href="/" class="footer-brand">
           <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <rect x="1" y="1" width="30" height="30" rx="9" fill="#345A4B"/>
+            <rect x="1" y="1" width="30" height="30" rx="9" fill="#A92332"/>
             <path d="M7 17h4l2.5-6 3 10 2.5-7h6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          Precepta
+          MENTORO
         </a>
         <p class="footer-tagline">Connect. Observe. Learn.</p>
         <div class="footer-social">
@@ -270,17 +170,14 @@
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCTYcB18Kz4dYvUc7XZ0g9CCyFnq5Nvrw-N_ai-8kNITTs9A/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener">Become a Mentor</a>
       </div>
     </div>
-    <p class="footer-disclaimer">Precepta is a mentorship platform. It organizes and facilitates connections between trainees and physicians — it does not provide medical treatment, control clinical decisions, or replace formal medical education.</p>
+    <p class="footer-disclaimer">MENTORO is a mentorship platform. It organizes and facilitates connections between trainees and physicians — it does not provide medical treatment, control clinical decisions, or replace formal medical education.</p>
     <div class="footer-bottom">
-      <span>© 2026 Precepta. All rights reserved.</span>
+      <span>© 2026 MENTORO. All rights reserved.</span>
       <span>Made for the medical community in Egypt.</span>
     </div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="supabase-config.js"></script>
 <script src="script.js"></script>
-<script type="module" src="student-form.js"></script>
 </body>
 </html>
