@@ -23,7 +23,7 @@
     </a>
     <nav class="nav-links">
       <a href="/">Home</a>
-      <a href="/students">For Students</a>
+      <a href="/students" aria-current="page">For Students</a>
       <a href="/physicians">For Physicians</a>
       <a href="/how-it-works">How It Works</a>
       <a href="/about">About Us</a>
@@ -53,64 +53,122 @@
 <main>
 
   <!-- HERO -->
-  <section class="page-hero">
+  <section class="page-hero audience-hero">
     <div class="container">
-      <div class="page-hero-content">
-        <span class="eyebrow">For students &amp; junior doctors</span>
-        <svg class="pulse-fragment" viewBox="0 0 120 24" aria-hidden="true"><path d="M2,12 C12,2 22,2 32,12 C42,22 52,22 62,12 C72,2 82,2 92,12 C102,22 112,22 118,14"/></svg>
-        <h1 class="page-hero-title">Don't just study a specialty. Experience it.</h1>
-        <p class="page-hero-lede">Discover experienced physicians and explore structured mentorship experiences — clinic shadowing, case discussion, OR observation, and honest career guidance.</p>
-        <div class="cta-row page-hero-actions">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Join as a Student</a>
+      <div class="audience-hero-grid">
+        <div class="page-hero-content">
+          <span class="eyebrow">For students &amp; junior doctors</span>
+          <svg class="pulse-fragment" viewBox="0 0 120 24" aria-hidden="true"><path d="M2,12 C12,2 22,2 32,12 C42,22 52,22 62,12 C72,2 82,2 92,12 C102,22 112,22 118,14"/></svg>
+          <h1 class="page-hero-title">Don't just study a specialty. Experience it.</h1>
+          <p class="page-hero-lede">Explore structured mentorship with experienced physicians through clinical observation, case discussion, investigation interpretation, and honest career guidance.</p>
+          <div class="cta-row page-hero-actions">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSciSVd7iSu3HdYFwfhyAIdRdTU0uO9HtNNLotgc6nR-eY6mRg/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Join as a Student</a>
+          </div>
         </div>
+
+        <aside class="audience-hero-panel" aria-label="Examples of mentorship experiences">
+          <span class="audience-panel-label">What you can explore</span>
+          <ul class="audience-panel-list">
+            <li><span>01</span>Clinic shadowing</li>
+            <li><span>02</span>Clinical case discussion</li>
+            <li><span>03</span>Investigation interpretation</li>
+            <li><span>04</span>OR observation where permitted</li>
+            <li><span>05</span>Career guidance</li>
+          </ul>
+          <p class="audience-panel-note">The exact format depends on the physician, setting, institutional policies, and patient consent.</p>
+        </aside>
       </div>
     </div>
   </section>
 
-  <!-- EXPLORE / PREPARE / EXPERIENCE / REFLECT -->
+  <!-- JOURNEY -->
   <section class="section section-alt">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head audience-section-head">
         <span class="eyebrow">Your journey</span>
         <h2 class="section-title">From curiosity to clarity.</h2>
+        <p class="section-subtitle">A simple path that keeps the learning experience focused and intentional.</p>
       </div>
-      <div class="grid grid-4">
+      <div class="grid grid-4 audience-steps-grid">
         <div class="step">
           <span class="step-number">01</span>
           <h3 class="step-title">Explore</h3>
-          <p class="step-text">Discover specialties and mentors that match your interests.</p>
+          <p class="step-text">Discover specialties and the kind of clinical exposure you want to understand.</p>
         </div>
         <div class="step">
           <span class="step-number">02</span>
           <h3 class="step-title">Prepare</h3>
-          <p class="step-text">Tell us what you want to learn and what type of exposure you're looking for.</p>
+          <p class="step-text">Tell us what you want to learn and what kind of mentorship experience you are looking for.</p>
         </div>
         <div class="step">
           <span class="step-number">03</span>
           <h3 class="step-title">Experience</h3>
-          <p class="step-text">Attend an agreed clinical mentorship session and learn through observation, discussion, and professional guidance.</p>
+          <p class="step-text">Learn through observation, discussion, investigation review, and professional guidance.</p>
         </div>
         <div class="step">
           <span class="step-number">04</span>
           <h3 class="step-title">Reflect</h3>
-          <p class="step-text">Use the experience to understand whether the specialty fits your interests and career goals.</p>
+          <p class="step-text">Use the experience to better understand the specialty and your own interests.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHAT YOU CAN EXPERIENCE (recap, linked) -->
+  <!-- EXPERIENCE -->
   <section class="section">
     <div class="container">
-      <div class="split-panel single-column-panel">
-        <div>
-          <span class="eyebrow on-dark">Not sure what you're looking for?</span>
-          <h2 style="margin-top:0.6rem; font-size:clamp(1.5rem,2.6vw,2rem);">See the full range of mentorship experiences.</h2>
-          <p style="max-width:56ch;">From clinic shadowing to OR observation and career mentorship — see the kinds of mentorship experiences available through MENTORO.</p>
-          <div class="cta-row section-actions">
-            <a href="/how-it-works#profiles" class="btn btn-outline btn-lg on-dark">See Sample Mentor Profiles</a>
-          </div>
-        </div>
+      <div class="section-head audience-section-head">
+        <span class="eyebrow">Clinical exposure</span>
+        <h2 class="section-title">Learn closer to real clinical practice.</h2>
+        <p class="section-subtitle">Mentorship can take different forms. The physician determines what is appropriate and available in each setting.</p>
+      </div>
+      <div class="grid grid-3 audience-feature-grid">
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5h18v12H3z"/><path d="M7 3.5v6M17 3.5v6M3 10h18"/></svg></div>
+          <h3 class="card-title">Observe clinical work</h3>
+          <p class="card-text">See how patient care, teamwork, and specialty-specific routines look in real clinical environments.</p>
+        </article>
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v12H4z"/><path d="M8 9h8M8 12h5"/></svg></div>
+          <h3 class="card-title">Discuss cases and reasoning</h3>
+          <p class="card-text">Ask questions, work through clinical thinking, and understand how experienced physicians approach decisions.</p>
+        </article>
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3 class="card-title">Interpret investigations</h3>
+          <p class="card-text">Explore how clinical findings and investigations are considered together in a real specialty context.</p>
+        </article>
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8M6 7h12v13H6z"/><path d="M9 11h6M9 14h4"/></svg></div>
+          <h3 class="card-title">Understand the specialty</h3>
+          <p class="card-text">Get a closer look at the day-to-day reality of a field before making major career decisions.</p>
+        </article>
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 5h14l-2 3 2 3H4"/></svg></div>
+          <h3 class="card-title">Get career perspective</h3>
+          <p class="card-text">Have an honest conversation with someone who has direct experience in the specialty you are considering.</p>
+        </article>
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h5M8 15h7"/></svg></div>
+          <h3 class="card-title">Reflect after the experience</h3>
+          <p class="card-text">Turn the experience into clearer questions, next steps, and a better sense of fit.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPECTATIONS -->
+  <section class="section section-dark audience-guidance">
+    <div class="container">
+      <div class="section-head audience-section-head audience-section-head-dark">
+        <span class="eyebrow">A grounded experience</span>
+        <h2 class="section-title">Real exposure, with clear boundaries.</h2>
+        <p class="section-subtitle">MENTORO facilitates mentorship. Clinical activities remain subject to the physician's discretion, institutional rules, professional regulations, and patient consent.</p>
+      </div>
+      <div class="grid grid-3 audience-guidance-grid">
+        <div class="audience-guidance-item"><span>01</span><h3>Learn by observing</h3><p>Your role is educational and defined by what is appropriate in the setting.</p></div>
+        <div class="audience-guidance-item"><span>02</span><h3>Ask better questions</h3><p>Use the opportunity to understand clinical thinking, workflow, and specialty decisions.</p></div>
+        <div class="audience-guidance-item"><span>03</span><h3>Keep patient care first</h3><p>All participation remains within the boundaries of consent, policy, and professional practice.</p></div>
       </div>
     </div>
   </section>

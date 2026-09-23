@@ -24,7 +24,7 @@
     <nav class="nav-links">
       <a href="/">Home</a>
       <a href="/students">For Students</a>
-      <a href="/physicians">For Physicians</a>
+      <a href="/physicians" aria-current="page">For Physicians</a>
       <a href="/how-it-works">How It Works</a>
       <a href="/about">About Us</a>
     </nav>
@@ -53,117 +53,122 @@
 <main>
 
   <!-- HERO -->
-  <section class="page-hero">
+  <section class="page-hero audience-hero">
     <div class="container">
-      <div class="page-hero-content">
-        <span class="eyebrow">For physicians</span>
-        <svg class="pulse-fragment" viewBox="0 0 120 24" aria-hidden="true"><path d="M2,12 C12,2 22,2 32,12 C42,22 52,22 62,12 C72,2 82,2 92,12 C102,22 112,22 118,14"/></svg>
-        <h1 class="page-hero-title">Your experience can help shape someone's career.</h1>
-        <p class="page-hero-lede">Join a growing network of physicians helping motivated students and junior doctors gain meaningful clinical exposure and professional mentorship.</p>
-        <div class="cta-row page-hero-actions">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCTYcB18Kz4dYvUc7XZ0g9CCyFnq5Nvrw-N_ai-8kNITTs9A/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Become a Mentor</a>
+      <div class="audience-hero-grid">
+        <div class="page-hero-content">
+          <span class="eyebrow">For physicians</span>
+          <svg class="pulse-fragment" viewBox="0 0 120 24" aria-hidden="true"><path d="M2,12 C12,2 22,2 32,12 C42,22 52,22 62,12 C72,2 82,2 92,12 C102,22 112,22 118,14"/></svg>
+          <h1 class="page-hero-title">Your experience can help shape someone's career.</h1>
+          <p class="page-hero-lede">Share what you know through structured mentorship for medical students, interns, and junior doctors — on terms that fit your practice.</p>
+          <div class="cta-row page-hero-actions">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCTYcB18Kz4dYvUc7XZ0g9CCyFnq5Nvrw-N_ai-8kNITTs9A/viewform?usp=sharing&amp;ouid=117940045554348383782" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Become a Mentor</a>
+          </div>
         </div>
+
+        <aside class="audience-hero-panel" aria-label="Mentor choices">
+          <span class="audience-panel-label">You choose the scope</span>
+          <ul class="audience-panel-list">
+            <li><span>01</span>Your availability</li>
+            <li><span>02</span>The type of mentorship</li>
+            <li><span>03</span>The setting and boundaries</li>
+            <li><span>04</span>What you are comfortable sharing</li>
+            <li><span>05</span>How you interact with trainees</li>
+          </ul>
+          <p class="audience-panel-note">Mentorship activities remain subject to your discretion, institutional policies, professional regulations, and patient consent.</p>
+        </aside>
       </div>
     </div>
   </section>
 
-  <!-- WHAT DOES BEING A MENTOR MEAN -->
+  <!-- MENTORSHIP FORMATS -->
   <section class="section section-alt">
     <div class="container">
-      <div class="grid grid-2" style="gap: 3.5rem; align-items: start;">
-        <div>
-          <span class="eyebrow">What does being a mentor mean?</span>
-          <h2 class="section-title" style="margin-top:0.75rem; font-size: clamp(1.6rem, 2.6vw, 2rem);">You decide what mentorship looks like.</h2>
-          <p class="lede" style="margin-top:1.1rem; font-size:1.02rem;">Mentors choose what type of experience they are comfortable providing, when they are available, and how they prefer to interact with trainees.</p>
-
-          <p class="profile-section-label" style="margin-top:2rem;">Possible experiences</p>
-          <div class="tag-row">
-            <span class="tag">Clinic shadowing</span>
-            <span class="tag">Clinical case discussion</span>
-            <span class="tag">Specialty introduction</span>
-            <span class="tag">OR observation where permitted</span>
-            <span class="tag">Career mentorship</span>
-            <span class="tag">Professional guidance</span>
-          </div>
-
-          <div class="note">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/></svg>
-            <p>Mentorship activities are determined by the physician and must comply with institutional policies, professional regulations, and patient consent.</p>
-          </div>
-        </div>
-
-        <div class="card-flat">
-          <p class="profile-section-label" style="margin-top:0;">A sample of what mentors offer</p>
-          <div class="stack" style="margin-top:0.75rem; gap: 1.1rem;">
-            <div class="value-item">
-              <div class="card-icon" style="margin-bottom:0;">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="16" rx="2"/><line x1="3.5" y1="10" x2="20.5" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg>
-              </div>
-              <div>
-                <h3 class="value-title" style="color:var(--ink);">Set your own availability</h3>
-                <p class="value-text" style="color:var(--slate);">A few hours a month is enough to make a difference.</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <div class="card-icon" style="margin-bottom:0;">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="3"/></svg>
-              </div>
-              <div>
-                <h3 class="value-title" style="color:var(--ink);">Choose the format</h3>
-                <p class="value-text" style="color:var(--slate);">Shadowing, discussion, or a short guidance conversation — your call.</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <div class="card-icon" style="margin-bottom:0;">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
-              </div>
-              <div>
-                <h3 class="value-title" style="color:var(--ink);">Stay in control</h3>
-                <p class="value-text" style="color:var(--slate);">Nothing happens in your clinic or theatre without your discretion.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="section-head audience-section-head">
+        <span class="eyebrow">What mentorship can look like</span>
+        <h2 class="section-title">Share the parts of medicine you know best.</h2>
+        <p class="section-subtitle">There is no single format. The experience can be shaped around your specialty, setting, and comfort level.</p>
+      </div>
+      <div class="grid grid-3 audience-feature-grid">
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5h18v12H3z"/><path d="M7 3.5v6M17 3.5v6M3 10h18"/></svg></div>
+          <h3 class="card-title">Clinic shadowing</h3>
+          <p class="card-text">Let trainees observe the realities of clinical workflow, communication, and specialty practice.</p>
+        </article>
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v12H4z"/><path d="M8 9h8M8 12h5"/></svg></div>
+          <h3 class="card-title">Case discussion</h3>
+          <p class="card-text">Share how you reason through cases and explain the questions that matter in your field.</p>
+        </article>
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3 class="card-title">Investigation interpretation</h3>
+          <p class="card-text">Show how investigations fit into clinical reasoning and specialty-specific decision making.</p>
+        </article>
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8M6 7h12v13H6z"/><path d="M9 11h6M9 14h4"/></svg></div>
+          <h3 class="card-title">Specialty introduction</h3>
+          <p class="card-text">Give a realistic introduction to the work, rhythm, and questions that come with your specialty.</p>
+        </article>
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 5h14l-2 3 2 3H4"/></svg></div>
+          <h3 class="card-title">Career mentorship</h3>
+          <p class="card-text">Help trainees ask better questions about training, career choices, and what life in the specialty is like.</p>
+        </article>
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 20c0-3 2-5 5-5s5 2 5 5M11 20c0-3 2-5 5-5s5 2 5 5"/></svg></div>
+          <h3 class="card-title">Professional guidance</h3>
+          <p class="card-text">Share practical lessons, professional perspective, and the experience that textbooks cannot fully capture.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- WHY BECOME A MENTOR -->
+  <!-- CONTROL / BOUNDARIES -->
+  <section class="section section-dark audience-guidance">
+    <div class="container">
+      <div class="section-head audience-section-head audience-section-head-dark">
+        <span class="eyebrow">You stay in control</span>
+        <h2 class="section-title">Mentorship should fit your practice.</h2>
+        <p class="section-subtitle">You decide what you are comfortable providing. MENTORO helps make the connection and keeps the expectations clear.</p>
+      </div>
+      <div class="grid grid-3 audience-guidance-grid">
+        <div class="audience-guidance-item"><span>01</span><h3>Set your availability</h3><p>Choose when you are available and what level of involvement works for you.</p></div>
+        <div class="audience-guidance-item"><span>02</span><h3>Choose the format</h3><p>Offer shadowing, discussion, guidance, or another format that suits your setting.</p></div>
+        <div class="audience-guidance-item"><span>03</span><h3>Protect the clinical setting</h3><p>Any activity remains subject to institutional rules, professional standards, and patient consent.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY MENTOR -->
   <section class="section">
     <div class="container">
-      <div class="section-head center">
+      <div class="section-head audience-section-head center">
         <span class="eyebrow">Why become a mentor</span>
         <h2 class="section-title">Give something that was never given to you.</h2>
+        <p class="section-subtitle">Turn your experience into useful perspective for the people coming after you.</p>
       </div>
-      <div class="grid grid-4">
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><line x1="8.3" y1="10.8" x2="15.8" y2="7.2"/><line x1="8.3" y1="13.2" x2="15.8" y2="16.8"/></svg>
-          </div>
-          <h3 class="card-title" style="font-size:1rem;">Share Your Experience</h3>
+      <div class="grid grid-4 audience-benefit-grid">
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><line x1="8.3" y1="10.8" x2="15.8" y2="7.2"/><line x1="8.3" y1="13.2" x2="15.8" y2="16.8"/></svg></div>
+          <h3 class="card-title">Share your experience</h3>
           <p class="card-text">Help younger physicians understand the realities of your specialty.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="7" r="2.7"/><path d="M15.5 4.2A3.5 3.5 0 0 1 21 7"/></svg>
-          </div>
-          <h3 class="card-title" style="font-size:1rem;">Build the Next Generation</h3>
-          <p class="card-text">Give motivated trainees a chance to learn from real experience.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="16" rx="2"/><line x1="3.5" y1="10" x2="20.5" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg>
-          </div>
-          <h3 class="card-title" style="font-size:1rem;">Flexible</h3>
-          <p class="card-text">Choose your availability and the type of mentorship you are comfortable providing.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/><circle cx="16.5" cy="14" r="1.3" fill="currentColor" stroke="none"/></svg>
-          </div>
-          <h3 class="card-title" style="font-size:1rem;">Compensated</h3>
+        </article>
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="7" r="2.7"/><path d="M15.5 4.2A3.5 3.5 0 0 1 21 7"/></svg></div>
+          <h3 class="card-title">Support the next generation</h3>
+          <p class="card-text">Give motivated trainees a closer look at real clinical work and professional life.</p>
+        </article>
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/></svg></div>
+          <h3 class="card-title">Keep it flexible</h3>
+          <p class="card-text">Choose the timing, format, and scope of the mentorship you provide.</p>
+        </article>
+        <article class="card audience-feature-card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/><circle cx="16.5" cy="14" r="1.3" fill="currentColor" stroke="none"/></svg></div>
+          <h3 class="card-title">Be compensated</h3>
           <p class="card-text">Receive compensation for your time, mentorship, and supervision.</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
