@@ -831,3 +831,104 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
   .pulse-line { stroke-dashoffset: 0; }
   .fade-up { opacity: 1; transform: none; }
 }
+
+/* ---------- Homepage problem / access-gap section ---------- */
+.home-page .problem-section {
+  background: var(--surface);
+}
+.home-page .problem-section .eyebrow { color: var(--mentoro-red); }
+.home-page .problem-section .eyebrow::before { background: var(--mentoro-red); }
+.home-page .problem-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  gap: clamp(2rem, 7vw, 6rem);
+  align-items: start;
+}
+.home-page .problem-head {
+  margin-bottom: 0;
+  max-width: 700px;
+}
+.home-page .problem-head .section-title {
+  max-width: 16ch;
+  text-wrap: balance;
+}
+.home-page .problem-copy {
+  padding-top: 0.35rem;
+  max-width: 48ch;
+}
+.home-page .problem-lede {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  line-height: 1.35;
+  color: var(--ink-soft);
+}
+.home-page .problem-body {
+  margin-top: 1rem;
+  color: var(--slate);
+  font-size: 1rem;
+}
+.home-page .problem-points {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  padding-top: 1.35rem;
+  border-top: 1px solid var(--line-strong);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+.home-page .problem-point {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  padding: 0.65rem clamp(1rem, 2.8vw, 2rem) 0.65rem 0;
+  min-height: 108px;
+}
+.home-page .problem-point + .problem-point {
+  border-left: 1px solid var(--line);
+  padding-left: clamp(1rem, 2.8vw, 2rem);
+}
+.home-page .problem-point-number {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--mentoro-red);
+  padding-top: 0.18rem;
+}
+.home-page .problem-point h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+.home-page .problem-point p {
+  margin-top: 0.4rem;
+  color: var(--slate);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  max-width: 26ch;
+}
+
+@media (max-width: 760px) {
+  .home-page .problem-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .home-page .problem-head .section-title {
+    max-width: 22ch;
+  }
+  .home-page .problem-copy {
+    max-width: 58ch;
+  }
+  .home-page .problem-points {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .home-page .problem-point,
+  .home-page .problem-point + .problem-point {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding: 1.1rem 0;
+    min-height: 0;
+  }
+  .home-page .problem-point:first-child {
+    border-top: 0;
+    padding-top: 0.25rem;
+  }
+}
