@@ -1,11 +1,11 @@
-MENTORO Logo / Navbar Alignment Patch
+MENTORO small final polish
 
-Replace styles.css in the current project with this version.
+1) Navbar/footer brand is visually lowercase "mentoro" and uses IBM Plex Sans instead of the display font.
+2) Navbar logo keeps its native aspect ratio and is optically lowered for better vertical alignment.
+3) About Us founder photo section is removed; the About hero is now a clean single-column layout.
 
-Logo sizing:
-- Navbar: 56x56px desktop, 48x48px mobile
-- Footer: 40x40px
-- Small upward optical correction in the navbar
-- object-fit/box sizing normalized for the official PNG mark
+Files to replace:
+- about.html
+- styles.css
 
-This patch is CSS-only; no HTML, links, forms, or application logic are changed.
+Optional cleanup: delete assets/mentoro-founders.jpg from your project because About no longer references it.
