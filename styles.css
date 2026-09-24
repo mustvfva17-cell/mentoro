@@ -226,7 +226,25 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
   gap: 1.5rem;
 }
 .brand { display: flex; align-items: center; gap: 0.55rem; font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; color: var(--ink); }
-.brand-mark { width: 30px; height: 30px; flex-shrink: 0; }
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: block;
+  object-fit: contain;
+}
+
+/* Official MENTORO mark — larger in the navigation, compact in the footer. */
+.nav .brand-mark {
+  width: 56px;
+  height: 56px;
+  transform: translateY(-1px);
+}
+.footer-brand .brand-mark {
+  width: 40px;
+  height: 40px;
+}
+
 
 .nav-links { display: flex; align-items: center; gap: 2rem; }
 .nav-links a {
@@ -287,6 +305,12 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
 .mobile-menu .cta-row { margin-top: 1.5rem; flex-direction: column; align-items: stretch; }
 
 @media (max-width: 900px) {
+  .nav .brand-mark {
+    width: 48px;
+    height: 48px;
+    transform: translateY(-1px);
+  }
+
   .nav-links { display: none; }
   .nav-actions .btn-outline { display: none; }
   .nav-toggle { display: flex; }
