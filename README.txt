@@ -1,5 +1,5 @@
-MENTORO current mentors list patch
-
-Replaces the illustrative mentor profiles on How It Works with the two current participating physicians supplied by the project owner.
-
-Included: how-it-works.html, styles.css, assets/mentors/ahmed-ezzat.jpg, assets/mentors/abo-zeid-khodair.jpg, assets/mentoro-mark.png
+MENTORO brand wordmark refinement
+- Uses the existing Bricolage Grotesque font already loaded by the site.
+- Refines the visible lowercase `mentoro` in navbar and footer.
+- No new dependency or font download required.
+- This styles.css keeps the current navbar logo sizing/alignment from the previous MENTORO patch.
