@@ -225,7 +225,7 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
   justify-content: space-between;
   gap: 1.5rem;
 }
-.brand { display: flex; align-items: center; gap: 0.55rem; font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; color: var(--ink); }
+.brand { display: flex; align-items: center; gap: 0.55rem; font-family: var(--font-body); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.015em; text-transform: lowercase; color: var(--ink); }
 .brand-mark {
   width: 36px;
   height: 36px;
@@ -234,15 +234,19 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
   object-fit: contain;
 }
 
-/* Official MENTORO mark — larger in the navigation, compact in the footer. */
+/* Official MENTORO mark — preserve native aspect ratio and optically align it with the wordmark. */
 .nav .brand-mark {
   width: 56px;
-  height: 56px;
-  transform: translateY(-1px);
+  height: 45px;
+  flex: 0 0 56px;
+  transform: translateY(3px);
+  object-fit: contain;
 }
 .footer-brand .brand-mark {
   width: 40px;
-  height: 40px;
+  height: 32px;
+  flex: 0 0 40px;
+  object-fit: contain;
 }
 
 
@@ -307,8 +311,9 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
 @media (max-width: 900px) {
   .nav .brand-mark {
     width: 48px;
-    height: 48px;
-    transform: translateY(-1px);
+    height: 38px;
+    flex-basis: 48px;
+    transform: translateY(2px);
   }
 
   .nav-links { display: none; }
@@ -687,7 +692,7 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
 /* ---------- Footer ---------- */
 .footer { background: var(--ink); color: rgba(255,255,255,0.75); padding: clamp(3rem, 6vw, 4.5rem) 0 1.75rem; }
 .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.12); }
-.footer-brand { display: flex; align-items: center; gap: 0.55rem; font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; color: #fff; }
+.footer-brand { display: flex; align-items: center; gap: 0.55rem; font-family: var(--font-body); font-weight: 600; font-size: 1.18rem; letter-spacing: -0.01em; text-transform: lowercase; color: #fff; }
 .footer-tagline { margin-top: 0.9rem; font-size: 0.92rem; color: rgba(255,255,255,0.55); max-width: 30ch; }
 .footer-col h4 { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.45); font-weight: 500; margin-bottom: 1.1rem; }
 .footer-col a { display: block; padding: 0.4rem 0; font-size: 0.92rem; color: rgba(255,255,255,0.8); transition: color 0.18s ease; }
@@ -1532,37 +1537,15 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
     var(--paper);
 }
 .about-founder-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.72fr);
-  gap: clamp(2.5rem, 7vw, 6.5rem);
-  align-items: center;
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .about-founder-grid .page-hero-title {
-  max-width: 11ch;
+  max-width: 18ch;
 }
 .about-founder-grid .page-hero-lede {
   max-width: 58ch;
-}
-.about-founder-photo {
-  margin: 0;
-  border-radius: 26px;
-  overflow: hidden;
-  background: var(--surface);
-  box-shadow: var(--shadow-lg);
-  border: 1px solid var(--line);
-}
-.about-founder-photo img {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center 28%;
-}
-.about-founder-photo figcaption {
-  padding: 0.9rem 1.15rem 1rem;
-  color: var(--slate);
-  font-size: 0.78rem;
-  line-height: 1.45;
-  background: var(--surface);
 }
 
 .about-mission-grid {
@@ -1679,9 +1662,7 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
 .about-page .footer-col a:hover { color: var(--mentoro-red); }
 
 @media (max-width: 900px) {
-  .about-founder-grid { grid-template-columns: 1fr; }
-  .about-founder-grid .page-hero-title { max-width: none; }
-  .about-founder-photo { max-width: 620px; }
+  .about-founder-grid .page-hero-title { max-width: 18ch; }
   .about-story-grid { grid-template-columns: 1fr; }
   .about-story-card { min-height: auto; padding: 1.3rem 0; }
   .about-story-card h3 { margin-top: 1.8rem; }
@@ -1691,7 +1672,6 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
 @media (max-width: 640px) {
   .about-founder-hero { padding-top: 3.25rem; }
   .about-mission-grid { grid-template-columns: 1fr; }
-  .about-founder-photo { border-radius: 20px; }
   .about-future { grid-template-columns: 1fr; }
   .about-contact-actions { display: grid; grid-template-columns: 1fr; }
   .about-contact-actions .btn { width: 100%; }
