@@ -1,11 +1,5 @@
-MENTORO small final polish
+MENTORO current mentors list patch
 
-1) Navbar/footer brand is visually lowercase "mentoro" and uses IBM Plex Sans instead of the display font.
-2) Navbar logo keeps its native aspect ratio and is optically lowered for better vertical alignment.
-3) About Us founder photo section is removed; the About hero is now a clean single-column layout.
+Replaces the illustrative mentor profiles on How It Works with the two current participating physicians supplied by the project owner.
 
-Files to replace:
-- about.html
-- styles.css
-
-Optional cleanup: delete assets/mentoro-founders.jpg from your project because About no longer references it.
+Included: how-it-works.html, styles.css, assets/mentors/ahmed-ezzat.jpg, assets/mentors/abo-zeid-khodair.jpg, assets/mentoro-mark.png
