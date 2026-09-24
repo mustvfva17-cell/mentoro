@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    MENTORO — Design System
    Display: Bricolage Grotesque · Body: IBM Plex Sans · Utility: IBM Plex Mono
    Ink navy + paper white + a single signature "scrub green" accent, drawn
@@ -1676,3 +1676,24 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
   .about-contact-actions { display: grid; grid-template-columns: 1fr; }
   .about-contact-actions .btn { width: 100%; }
 }
+
+/* MENTORO WORDMARK STYLE â€” BEGIN */
+/* Distinctive, modern wordmark treatment â€” does not add a new dependency. */
+.brand,
+.footer-brand {
+  font-family: "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-transform: lowercase;
+}
+
+.nav .brand {
+  font-size: 1.30rem;
+}
+
+.footer-brand {
+  font-size: 1.14rem;
+}
+/* MENTORO WORDMARK STYLE â€” END */
+

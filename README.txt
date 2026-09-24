@@ -1,5 +1,14 @@
-MENTORO brand wordmark refinement
-- Uses the existing Bricolage Grotesque font already loaded by the site.
-- Refines the visible lowercase `mentoro` in navbar and footer.
-- No new dependency or font download required.
-- This styles.css keeps the current navbar logo sizing/alignment from the previous MENTORO patch.
+MENTORO wordmark definitive fix
+
+This patch changes only the visible MENTORO brand-name typography in the navbar/footer.
+It preserves your current styles.css and replaces only a marked override block if it already exists.
+No new font dependency is added.
+
+Run from the project root in VS Code PowerShell:
+
+Set-ExecutionPolicy -Scope Process Bypass
+.\apply-mentoro-wordmark-style.ps1
+
+git --no-pager diff -- styles.css
+
+Then refresh the site with Ctrl+F5.
