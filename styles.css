@@ -1763,3 +1763,12 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
   .brand .brand-lockup { width: 135px; }
   .footer-brand .brand-lockup { width: 140px; }
 }
+
+/* Fix mobile menu primary CTA text */
+.mobile-menu .btn-primary {
+  color: #fff;
+}
+
+.mobile-menu .btn-primary:hover {
+  color: #fff;
+}
