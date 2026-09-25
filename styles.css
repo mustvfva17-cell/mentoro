@@ -1736,3 +1736,30 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
     font-size: 1.28rem;
   }
 }
+
+/* ---------- Approved MENTORO logo lockup ---------- */
+.brand-lockup {
+  width: 170px;
+  height: auto;
+  display: block;
+  flex: 0 0 auto;
+}
+.brand .brand-lockup {
+  width: clamp(145px, 11vw, 175px);
+}
+.footer-brand {
+  width: fit-content;
+}
+.footer-brand .brand-lockup {
+  width: 150px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 6px 9px;
+}
+@media (max-width: 900px) {
+  .brand .brand-lockup { width: 150px; }
+}
+@media (max-width: 520px) {
+  .brand .brand-lockup { width: 135px; }
+  .footer-brand .brand-lockup { width: 140px; }
+}
