@@ -1,14 +1,26 @@
-MENTORO wordmark definitive fix
+MENTORO — New Application Form Links
 
-This patch changes only the visible MENTORO brand-name typography in the navbar/footer.
-It preserves your current styles.css and replaces only a marked override block if it already exists.
-No new font dependency is added.
+Trainee application:
+https://mentoro-trainee.zite.so/
 
-Run from the project root in VS Code PowerShell:
+Mentor application:
+https://mentor-form.zite.so/
+
+This patch edits the existing project in place so your current work is preserved.
+
+1. Put apply-mentoro-form-links.ps1 in the project root.
+2. In VS Code Terminal:
 
 Set-ExecutionPolicy -Scope Process Bypass
-.\apply-mentoro-wordmark-style.ps1
+.\apply-mentoro-form-links.ps1
 
-git --no-pager diff -- styles.css
+3. Verify:
 
-Then refresh the site with Ctrl+F5.
+git --no-pager diff
+git grep -n -i "google.com/forms\|forms.gle\|mentoro-trainee.zite.so\|mentor-form.zite.so"
+
+4. Deploy:
+
+git add .
+git commit -m "Update trainee and mentor application forms"
+git push

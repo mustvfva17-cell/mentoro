@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    MENTORO — Design System
    Display: Bricolage Grotesque · Body: IBM Plex Sans · Utility: IBM Plex Mono
    Ink navy + paper white + a single signature "scrub green" accent, drawn
@@ -1677,23 +1677,62 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
   .about-contact-actions .btn { width: 100%; }
 }
 
-/* MENTORO WORDMARK STYLE â€” BEGIN */
-/* Distinctive, modern wordmark treatment â€” does not add a new dependency. */
+/* Final MENTORO wordmark refinement */
 .brand,
 .footer-brand {
-  font-family: "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
+  font-family: "Century Gothic", "Trebuchet MS", "Segoe UI", sans-serif !important;
   font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1;
+  letter-spacing: -0.045em;
   text-transform: lowercase;
+  line-height: 1;
 }
 
-.nav .brand {
-  font-size: 1.30rem;
+.brand {
+  font-size: 1.34rem;
 }
 
 .footer-brand {
-  font-size: 1.14rem;
+  font-size: 1.18rem;
 }
-/* MENTORO WORDMARK STYLE â€” END */
 
+/* MENTORO radical wordmark treatment */
+.brand-wordmark,
+.footer-brand .brand-wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  font-family: "Trebuchet MS", "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 1.42rem;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  color: var(--ink);
+  text-transform: lowercase;
+  transform: translateY(1px) scaleX(0.98);
+  transform-origin: left center;
+}
+
+.brand-o,
+.footer-brand .brand-o {
+  color: var(--mentoro-red, #B4233A);
+  font-size: 1.08em;
+  font-weight: 900;
+  letter-spacing: -0.075em;
+  margin-left: 0.01em;
+  position: relative;
+  top: 0.005em;
+}
+
+.footer-brand .brand-wordmark {
+  font-size: 1.18rem;
+  color: #fff;
+}
+
+.footer-brand .brand-o {
+  color: var(--mentoro-red, #B4233A);
+}
+
+@media (max-width: 700px) {
+  .brand-wordmark {
+    font-size: 1.28rem;
+  }
+}
