@@ -1772,3 +1772,11 @@ select:focus-visible, textarea:focus-visible, .faq-question:focus-visible {
 .mobile-menu .btn-primary:hover {
   color: #fff;
 }
+
+/* Fix mobile menu CTA spacing */
+.mobile-menu .cta-row .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.85rem;
+}
