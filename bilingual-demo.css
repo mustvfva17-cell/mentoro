@@ -1,0 +1,22 @@
+﻿/* MENTORO bilingual demo polish - does not modify production styles */
+html[dir="rtl"] body { font-family: "Noto Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif; }
+html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] h3, html[dir="rtl"] h4 { font-family: "Noto Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif; letter-spacing: 0; }
+html[dir="rtl"] .nav-inner { flex-direction: row-reverse; }
+html[dir="rtl"] .nav-links { flex-direction: row-reverse; }
+html[dir="rtl"] .nav-actions { flex-direction: row-reverse; }
+html[dir="rtl"] .cta-row { flex-direction: row-reverse; }
+html[dir="rtl"] .audience-hero-grid, html[dir="rtl"] .how-hero-grid { direction: rtl; }
+html[dir="rtl"] .home-mentors-head { direction: rtl; }
+html[dir="rtl"] .faq-question { text-align: right; }
+html[dir="rtl"] .footer-top { direction: rtl; }
+html[dir="rtl"] .footer-bottom { direction: rtl; }
+html[dir="rtl"] .audience-panel-list li, html[dir="rtl"] .how-process-list li { direction: rtl; }
+html[dir="rtl"] .audience-panel-list li > span, html[dir="rtl"] .how-process-list li > span { margin-left: .65rem; margin-right: 0; }
+.nav-links a { white-space: nowrap; }
+.nav-actions .btn { white-space: nowrap; }
+@media (max-width: 1100px) and (min-width: 901px) {
+  .nav-inner { gap: 1rem; }
+  .nav-links { gap: 1.25rem; }
+  .nav-actions { gap: .5rem; }
+  .nav-actions .btn { padding-left: 1rem; padding-right: 1rem; }
+}

@@ -1,231 +1,187 @@
 ﻿<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Physicians — MENTORO</title>
-<meta name="description" content="Join MENTORO's network of specialists and consultants offering structured clinical mentorship to Egypt's next generation of physicians.">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>For Physicians — mentoro</title>
+<meta content="Join mentoro's network of specialists and consultants offering structured clinical mentorship to Egypt's next generation of physicians." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="assets/mentoro-favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/mentoro-favicon-180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="bilingual-demo.css" rel="stylesheet"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/mentoro-favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/mentoro-favicon-180.png">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="physicians-page">
-
 <header class="nav">
-  <div class="nav-inner">
-    <a href="/" class="brand"><img class="brand-lockup" src="assets/mentoro-approved-lockup.png" alt="mentoro"></a>
-    <nav class="nav-links">
-      <a href="/">Home</a>
-      <a href="/students">For Trainees</a>
-      <a href="/physicians" aria-current="page">For Physicians</a>
-      <a href="/how-it-works">How It Works</a>
-      <a href="/about">About Us</a>
-    </nav>
-    <div class="nav-actions">
-      <a href="https://mentoro-trainee.zite.so/" target="_blank" rel="noopener" class="btn btn-outline">Join as a Trainee</a>
-      <a href="https://mentor-form.zite.so/" target="_blank" rel="noopener" class="btn btn-primary">Become a Mentor</a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<div class="mobile-menu">
-  <a href="/">Home</a>
-  <a href="/students">For Trainees</a>
-  <a href="/physicians">For Physicians</a>
-  <a href="/how-it-works">How It Works</a>
-  <a href="/about">About Us</a>
-  <div class="cta-row">
-    <a href="https://mentoro-trainee.zite.so/" target="_blank" rel="noopener" class="btn btn-outline btn-block">Join as a Trainee</a>
-    <a href="https://mentor-form.zite.so/" target="_blank" rel="noopener" class="btn btn-primary btn-block">Become a Mentor</a>
-  </div>
+<div class="nav-inner">
+<a class="brand" href="index.html"><img alt="mentoro" class="brand-lockup" src="assets/mentoro-approved-lockup.png"/></a>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="students.html">For Trainees</a>
+<a aria-current="page" href="physicians.html">For Physicians</a>
+<a href="how-it-works.html">How It Works</a>
+<a href="about.html">About Us</a>
+</nav>
+<div class="nav-actions"><a class="lang-switch" href="ar/physicians.html">العربية</a>
+<a class="btn btn-outline" href="https://mentoro-trainee.zite.so/" rel="noopener" target="_blank">Join as a Trainee</a>
+<a class="btn btn-primary" href="https://mentor-form.zite.so/" rel="noopener" target="_blank">Become a Mentor</a>
+<button aria-expanded="false" aria-label="Open menu" class="nav-toggle">
+<span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+</button>
 </div>
-
+</div>
+</header>
+<div class="mobile-menu">
+<a href="index.html">Home</a>
+<a href="students.html">For Trainees</a>
+<a href="physicians.html">For Physicians</a>
+<a href="how-it-works.html">How It Works</a>
+<a href="about.html">About Us</a>
+<a class="lang-switch" href="ar/physicians.html">العربية</a><div class="cta-row">
+<a class="btn btn-outline btn-block" href="https://mentoro-trainee.zite.so/" rel="noopener" target="_blank">Join as a Trainee</a>
+<a class="btn btn-primary btn-block" href="https://mentor-form.zite.so/" rel="noopener" target="_blank">Become a Mentor</a>
+</div>
+</div>
 <main>
-
-  <!-- HERO -->
-  <section class="page-hero audience-hero">
-    <div class="container">
-      <div class="audience-hero-grid">
-        <div class="page-hero-content">
-          <span class="eyebrow">For physicians</span>
-          <svg class="pulse-fragment" viewBox="0 0 120 24" aria-hidden="true"><path d="M2,12 C12,2 22,2 32,12 C42,22 52,22 62,12 C72,2 82,2 92,12 C102,22 112,22 118,14"/></svg>
-          <h1 class="page-hero-title">Your experience can help shape someone's career.</h1>
-          <p class="page-hero-lede">Share what you know through structured mentorship for medical Trainees, interns, and junior doctors — on terms that fit your practice.</p>
-          <div class="cta-row page-hero-actions">
-            <a href="https://mentor-form.zite.so/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Become a Mentor</a>
-          </div>
-        </div>
-
-        <aside class="audience-hero-panel" aria-label="Mentor choices">
-          <span class="audience-panel-label">You choose the scope</span>
-          <ul class="audience-panel-list">
-            <li><span>01</span>Your availability</li>
-            <li><span>02</span>The type of mentorship</li>
-            <li><span>03</span>The setting and boundaries</li>
-            <li><span>04</span>What you are comfortable sharing</li>
-            <li><span>05</span>How you interact with trainees</li>
-          </ul>
-          <p class="audience-panel-note">Mentorship activities remain subject to your discretion, institutional policies, professional regulations, and patient consent.</p>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <!-- MENTORSHIP FORMATS -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-head audience-section-head">
-        <span class="eyebrow">What mentorship can look like</span>
-        <h2 class="section-title">Share the parts of medicine you know best.</h2>
-        <p class="section-subtitle">There is no single format. The experience can be shaped around your specialty, setting, and comfort level.</p>
-      </div>
-      <div class="grid grid-3 audience-feature-grid">
-        <article class="card audience-feature-card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5h18v12H3z"/><path d="M7 3.5v6M17 3.5v6M3 10h18"/></svg></div>
-          <h3 class="card-title">Clinic shadowing</h3>
-          <p class="card-text">Let trainees observe the realities of clinical workflow, communication, and specialty practice.</p>
-        </article>
-        <article class="card audience-feature-card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v12H4z"/><path d="M8 9h8M8 12h5"/></svg></div>
-          <h3 class="card-title">Case discussion</h3>
-          <p class="card-text">Share how you reason through cases and explain the questions that matter in your field.</p>
-        </article>
-        <article class="card audience-feature-card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg></div>
-          <h3 class="card-title">Investigation interpretation</h3>
-          <p class="card-text">Show how investigations fit into clinical reasoning and specialty-specific decision making.</p>
-        </article>
-        <article class="card audience-feature-card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8M6 7h12v13H6z"/><path d="M9 11h6M9 14h4"/></svg></div>
-          <h3 class="card-title">Specialty introduction</h3>
-          <p class="card-text">Give a realistic introduction to the work, rhythm, and questions that come with your specialty.</p>
-        </article>
-        <article class="card audience-feature-card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 5h14l-2 3 2 3H4"/></svg></div>
-          <h3 class="card-title">Career mentorship</h3>
-          <p class="card-text">Help trainees ask better questions about training, career choices, and what life in the specialty is like.</p>
-        </article>
-        <article class="card audience-feature-card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 20c0-3 2-5 5-5s5 2 5 5M11 20c0-3 2-5 5-5s5 2 5 5"/></svg></div>
-          <h3 class="card-title">Professional guidance</h3>
-          <p class="card-text">Share practical lessons, professional perspective, and the experience that textbooks cannot fully capture.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTROL / BOUNDARIES -->
-  <section class="section section-dark audience-guidance">
-    <div class="container">
-      <div class="section-head audience-section-head audience-section-head-dark">
-        <span class="eyebrow">You stay in control</span>
-        <h2 class="section-title">Mentorship should fit your practice.</h2>
-        <p class="section-subtitle">You decide what you are comfortable providing. MENTORO helps make the connection and keeps the expectations clear.</p>
-      </div>
-      <div class="grid grid-3 audience-guidance-grid">
-        <div class="audience-guidance-item"><span>01</span><h3>Set your availability</h3><p>Choose when you are available and what level of involvement works for you.</p></div>
-        <div class="audience-guidance-item"><span>02</span><h3>Choose the format</h3><p>Offer shadowing, discussion, guidance, or another format that suits your setting.</p></div>
-        <div class="audience-guidance-item"><span>03</span><h3>Protect the clinical setting</h3><p>Any activity remains subject to institutional rules, professional standards, and patient consent.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY MENTOR -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head audience-section-head center">
-        <span class="eyebrow">Why become a mentor</span>
-        <h2 class="section-title">Give something that was never given to you.</h2>
-        <p class="section-subtitle">Turn your experience into useful perspective for the people coming after you.</p>
-      </div>
-      <div class="grid grid-4 audience-benefit-grid">
-        <article class="card audience-feature-card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><line x1="8.3" y1="10.8" x2="15.8" y2="7.2"/><line x1="8.3" y1="13.2" x2="15.8" y2="16.8"/></svg></div>
-          <h3 class="card-title">Share your experience</h3>
-          <p class="card-text">Help younger physicians understand the realities of your specialty.</p>
-        </article>
-        <article class="card audience-feature-card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="7" r="2.7"/><path d="M15.5 4.2A3.5 3.5 0 0 1 21 7"/></svg></div>
-          <h3 class="card-title">Support the next generation</h3>
-          <p class="card-text">Give motivated trainees a closer look at real clinical work and professional life.</p>
-        </article>
-        <article class="card audience-feature-card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/></svg></div>
-          <h3 class="card-title">Keep it flexible</h3>
-          <p class="card-text">Choose the timing, format, and scope of the mentorship you provide.</p>
-        </article>
-        <article class="card audience-feature-card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/><circle cx="16.5" cy="14" r="1.3" fill="currentColor" stroke="none"/></svg></div>
-          <h3 class="card-title">Be compensated</h3>
-          <p class="card-text">Receive compensation for your time, mentorship, and supervision.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- APPLICATION CTA -->
-  <section id="apply" class="section section-alt application-section">
-    <div class="container">
-      <div class="application-cta">
-        <div class="application-cta-copy">
-          <span class="eyebrow">Become a Mentor</span>
-          <h2>Make your experience available to the next generation.</h2>
-          <p>Complete the mentor application through our application form and tell us about your specialty, availability, and the kind of guidance you would like to offer.</p>
-        </div>
-        <div class="application-cta-action">
-          <a href="https://mentor-form.zite.so/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Become a Mentor</a>
-          <span class="text-fine">You'll complete the application in our application form.</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
+<!-- HERO -->
+<section class="page-hero audience-hero">
+<div class="container">
+<div class="audience-hero-grid">
+<div class="page-hero-content">
+<span class="eyebrow">For physicians</span>
+<svg aria-hidden="true" class="pulse-fragment" viewbox="0 0 120 24"><path d="M2,12 C12,2 22,2 32,12 C42,22 52,22 62,12 C72,2 82,2 92,12 C102,22 112,22 118,14"></path></svg>
+<h1 class="page-hero-title">Your experience can help shape someone's career.</h1>
+<p class="page-hero-lede">Share what you know through structured mentorship for medical Trainees, interns, and junior doctors — on terms that fit your practice.</p>
+<div class="cta-row page-hero-actions">
+<a class="btn btn-primary btn-lg" href="https://mentor-form.zite.so/" rel="noopener" target="_blank">Become a Mentor</a>
+</div>
+</div>
+<aside aria-label="Mentor choices" class="audience-hero-panel">
+<span class="audience-panel-label">You choose the scope</span>
+<ul class="audience-panel-list">
+<li><span>01</span>Your availability</li>
+<li><span>02</span>The type of mentorship</li>
+<li><span>03</span>The setting and boundaries</li>
+<li><span>04</span>What you are comfortable sharing</li>
+<li><span>05</span>How you interact with trainees</li>
+</ul>
+<p class="audience-panel-note">Mentorship activities remain subject to your discretion, institutional policies, professional regulations, and patient consent.</p>
+</aside>
+</div>
+</div>
+</section>
+<!-- MENTORSHIP FORMATS -->
+<section class="section section-alt">
+<div class="container">
+<div class="section-head audience-section-head">
+<span class="eyebrow">What mentorship can look like</span>
+<h2 class="section-title">Share the parts of medicine you know best.</h2>
+<p class="section-subtitle">There is no single format. The experience can be shaped around your specialty, setting, and comfort level.</p>
+</div>
+<div class="grid grid-3 audience-feature-grid">
+<article class="card audience-feature-card">
+<div class="card-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M3 6.5h18v12H3z"></path><path d="M7 3.5v6M17 3.5v6M3 10h18"></path></svg></div>
+<h3 class="card-title">Clinic shadowing</h3>
+<p class="card-text">Let trainees observe the realities of clinical workflow, communication, and specialty practice.</p>
+</article>
+<article class="card audience-feature-card">
+<div class="card-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M4 5.5h16v12H4z"></path><path d="M8 9h8M8 12h5"></path></svg></div>
+<h3 class="card-title">Case discussion</h3>
+<p class="card-text">Share how you reason through cases and explain the questions that matter in your field.</p>
+</article>
+<article class="card audience-feature-card">
+<div class="card-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7v5l3 2"></path></svg></div>
+<h3 class="card-title">Investigation interpretation</h3>
+<p class="card-text">Show how investigations fit into clinical reasoning and specialty-specific decision making.</p>
+</article>
+<article class="card audience-feature-card">
+<div class="card-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M8 4h8M6 7h12v13H6z"></path><path d="M9 11h6M9 14h4"></path></svg></div>
+<h3 class="card-title">Specialty introduction</h3>
+<p class="card-text">Give a realistic introduction to the work, rhythm, and questions that come with your specialty.</p>
+</article>
+<article class="card audience-feature-card">
+<div class="card-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M4 19V5M4 5h14l-2 3 2 3H4"></path></svg></div>
+<h3 class="card-title">Career mentorship</h3>
+<p class="card-text">Help trainees ask better questions about training, career choices, and what life in the specialty is like.</p>
+</article>
+<article class="card audience-feature-card">
+<div class="card-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="8" cy="9" r="3"></circle><circle cx="16" cy="9" r="3"></circle><path d="M3 20c0-3 2-5 5-5s5 2 5 5M11 20c0-3 2-5 5-5s5 2 5 5"></path></svg></div>
+<h3 class="card-title">Professional guidance</h3>
+<p class="card-text">Share practical lessons, professional perspective, and the experience that textbooks cannot fully capture.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- CONTROL / BOUNDARIES -->
+<section class="section section-dark audience-guidance">
+<div class="container">
+<div class="section-head audience-section-head audience-section-head-dark">
+<span class="eyebrow">You stay in control</span>
+<h2 class="section-title">Mentorship should fit your practice.</h2>
+<p class="section-subtitle">You decide what you are comfortable providing. mentoro helps make the connection and keeps the expectations clear.</p>
+</div>
+<div class="grid grid-3 audience-guidance-grid">
+<div class="audience-guidance-item"><span>01</span><h3>Set your availability</h3><p>Choose when you are available and what level of involvement works for you.</p></div>
+<div class="audience-guidance-item"><span>02</span><h3>Choose the format</h3><p>Offer shadowing, discussion, guidance, or another format that suits your setting.</p></div>
+<div class="audience-guidance-item"><span>03</span><h3>Protect the clinical setting</h3><p>Any activity remains subject to institutional rules, professional standards, and patient consent.</p></div>
+</div>
+</div>
+</section>
+<!-- WHY MENTOR -->
+<!-- APPLICATION CTA -->
+<section class="section section-alt application-section" id="apply">
+<div class="container">
+<div class="application-cta">
+<div class="application-cta-copy">
+<span class="eyebrow">Become a Mentor</span>
+<h2>Make your experience available to the next generation.</h2>
+<p>Complete the mentor application through our application form and tell us about your specialty, availability, and the kind of guidance you would like to offer.</p>
+</div>
+<div class="application-cta-action">
+<a class="btn btn-primary btn-lg" href="https://mentor-form.zite.so/" rel="noopener" target="_blank">Become a Mentor</a>
+<span class="text-fine">You'll complete the application in our application form.</span>
+</div>
+</div>
+</div>
+</section>
 </main>
-
 <footer class="footer">
-  <div class="container">
-    <div class="footer-top">
-      <div>
-        <a href="/" class="footer-brand"><img class="brand-lockup" src="assets/mentoro-approved-lockup.png" alt="mentoro"></a>
-        <p class="footer-tagline">Connect. Observe. Learn.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Platform</h4>
-        <a href="/students">For Trainees</a>
-        <a href="/physicians">For Physicians</a>
-        <a href="/how-it-works">How It Works</a>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <a href="/about">About Us</a>
-        <a href="/about#faq">FAQ</a>
-        <a href="/about#contact">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h4>Get started</h4>
-        <a href="https://mentoro-trainee.zite.so/" target="_blank" rel="noopener">Join as a Trainee</a>
-        <a href="https://mentor-form.zite.so/" target="_blank" rel="noopener">Become a Mentor</a>
-      </div>
-    </div>
-    <p class="footer-disclaimer">MENTORO is a mentorship platform. It organizes and facilitates connections between trainees and physicians — it does not provide medical treatment, control clinical decisions, or replace formal medical education.</p>
-    <div class="footer-bottom">
-      <span>© 2026 MENTORO. All rights reserved.</span>
-      <span>Made for the medical community in Egypt.</span>
-    </div>
-  </div>
+<div class="container">
+<div class="footer-top">
+<div>
+<a class="footer-brand" href="index.html"><img alt="mentoro" class="brand-lockup" src="assets/mentoro-approved-lockup.png"/></a>
+<p class="footer-tagline">Connect. Observe. Learn.</p>
+</div>
+<div class="footer-col">
+<h4>Platform</h4>
+<a href="students.html">For Trainees</a>
+<a href="physicians.html">For Physicians</a>
+<a href="how-it-works.html">How It Works</a>
+</div>
+<div class="footer-col">
+<h4>Company</h4>
+<a href="about.html">About Us</a>
+<a href="about.html#faq">FAQ</a>
+<a href="about.html#contact">Contact</a>
+</div>
+<div class="footer-col">
+<h4>Get started</h4>
+<a href="https://mentoro-trainee.zite.so/" rel="noopener" target="_blank">Join as a Trainee</a>
+<a href="https://mentor-form.zite.so/" rel="noopener" target="_blank">Become a Mentor</a>
+</div>
+</div>
+<p class="footer-disclaimer">mentoro is a mentorship platform. It organizes and facilitates connections between trainees and physicians — it does not provide medical treatment, control clinical decisions, or replace formal medical education.</p>
+<div class="footer-bottom">
+<span>© 2026 mentoro. All rights reserved.</span>
+<span>Made for the medical community in Egypt.</span>
+</div>
+</div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
