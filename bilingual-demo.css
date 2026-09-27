@@ -1,5 +1,5 @@
-﻿/* MENTORO bilingual mobile navigation + viewport fix
-   Replace the existing bilingual-demo.css with this file. */
+﻿/* MENTORO bilingual navigation + mobile viewport fix
+   Built for the latest bilingual project version. */
 
 html[dir="rtl"] body {
   font-family: "Noto Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
@@ -13,18 +13,50 @@ html[dir="rtl"] h4 {
   letter-spacing: 0;
 }
 
-html[dir="rtl"] .nav-inner { flex-direction: row-reverse; }
-html[dir="rtl"] .nav-links { flex-direction: row-reverse; }
-html[dir="rtl"] .nav-actions { flex-direction: row-reverse; }
-html[dir="rtl"] .cta-row { flex-direction: row-reverse; }
+/* Keep the global page geometry identical in both languages.
+   RTL applies to the navigation content, not the whole header order. */
+html[dir="rtl"] .nav-inner {
+  flex-direction: row;
+  direction: ltr;
+}
+
+html[dir="rtl"] .nav-links {
+  flex-direction: row;
+  direction: rtl;
+}
+
+html[dir="rtl"] .nav-actions {
+  flex-direction: row;
+  direction: ltr;
+}
+
+html[dir="rtl"] .cta-row {
+  flex-direction: row-reverse;
+}
+
 html[dir="rtl"] .audience-hero-grid,
-html[dir="rtl"] .how-hero-grid { direction: rtl; }
-html[dir="rtl"] .home-mentors-head { direction: rtl; }
-html[dir="rtl"] .faq-question { text-align: right; }
+html[dir="rtl"] .how-hero-grid {
+  direction: rtl;
+}
+
+html[dir="rtl"] .home-mentors-head {
+  direction: rtl;
+}
+
+html[dir="rtl"] .faq-question {
+  text-align: right;
+}
+
 html[dir="rtl"] .footer-top,
-html[dir="rtl"] .footer-bottom { direction: rtl; }
+html[dir="rtl"] .footer-bottom {
+  direction: rtl;
+}
+
 html[dir="rtl"] .audience-panel-list li,
-html[dir="rtl"] .how-process-list li { direction: rtl; }
+html[dir="rtl"] .how-process-list li {
+  direction: rtl;
+}
+
 html[dir="rtl"] .audience-panel-list li > span,
 html[dir="rtl"] .how-process-list li > span {
   margin-left: .65rem;
@@ -70,8 +102,7 @@ html[dir="rtl"] .lang-switch {
   font-size: .9rem;
 }
 
-/* The language button belongs in the header only.
-   Do not render a second copy inside the open mobile menu. */
+/* One language button only: the header is the canonical location. */
 .mobile-menu > .lang-switch {
   display: none !important;
 }
@@ -96,9 +127,7 @@ html[dir="rtl"] .mentor-card-role {
   text-align: right;
 }
 
-/* -----------------------------
-   Mobile viewport + navbar
-   ----------------------------- */
+/* Mobile viewport + navbar */
 @media (max-width: 900px) {
   html,
   body {
@@ -149,7 +178,6 @@ html[dir="rtl"] .mentor-card-role {
     gap: .45rem;
   }
 
-  /* Never let the desktop CTAs force the header wider than the phone. */
   .nav-actions > .btn {
     display: none !important;
   }
@@ -204,8 +232,6 @@ html[dir="rtl"] .mentor-card-role {
     text-decoration: none;
   }
 
-  /* Explicit RTL alignment so the Arabic navigation never disappears
-     or falls outside the visible menu. */
   html[dir="rtl"] .mobile-menu {
     direction: rtl;
     text-align: right;
