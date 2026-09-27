@@ -1,69 +1,82 @@
-﻿/* MENTORO bilingual demo polish - does not modify production styles */
-html[dir="rtl"] body { font-family: "Noto Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif; }
-html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] h3, html[dir="rtl"] h4 { font-family: "Noto Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif; letter-spacing: 0; }
+﻿/* MENTORO bilingual mobile navigation + viewport fix
+   Replace the existing bilingual-demo.css with this file. */
+
+html[dir="rtl"] body {
+  font-family: "Noto Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4 {
+  font-family: "Noto Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+  letter-spacing: 0;
+}
+
 html[dir="rtl"] .nav-inner { flex-direction: row-reverse; }
 html[dir="rtl"] .nav-links { flex-direction: row-reverse; }
 html[dir="rtl"] .nav-actions { flex-direction: row-reverse; }
 html[dir="rtl"] .cta-row { flex-direction: row-reverse; }
-html[dir="rtl"] .audience-hero-grid, html[dir="rtl"] .how-hero-grid { direction: rtl; }
+html[dir="rtl"] .audience-hero-grid,
+html[dir="rtl"] .how-hero-grid { direction: rtl; }
 html[dir="rtl"] .home-mentors-head { direction: rtl; }
 html[dir="rtl"] .faq-question { text-align: right; }
-html[dir="rtl"] .footer-top { direction: rtl; }
+html[dir="rtl"] .footer-top,
 html[dir="rtl"] .footer-bottom { direction: rtl; }
-html[dir="rtl"] .audience-panel-list li, html[dir="rtl"] .how-process-list li { direction: rtl; }
-html[dir="rtl"] .audience-panel-list li > span, html[dir="rtl"] .how-process-list li > span { margin-left: .65rem; margin-right: 0; }
-.nav-links a { white-space: nowrap; }
-.nav-actions .btn { white-space: nowrap; }
-@media (max-width: 1100px) and (min-width: 901px) {
-  .nav-inner { gap: 1rem; }
-  .nav-links { gap: 1.25rem; }
-  .nav-actions { gap: .5rem; }
-  .nav-actions .btn { padding-left: 1rem; padding-right: 1rem; }
+html[dir="rtl"] .audience-panel-list li,
+html[dir="rtl"] .how-process-list li { direction: rtl; }
+html[dir="rtl"] .audience-panel-list li > span,
+html[dir="rtl"] .how-process-list li > span {
+  margin-left: .65rem;
+  margin-right: 0;
 }
 
+.nav-links a,
+.nav-actions .btn {
+  white-space: nowrap;
+}
 
 /* Compact language switcher */
 .lang-switch {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 44px;
   min-width: 44px;
   height: 40px;
-  padding: 0 .7rem;
+  padding: 0;
   border: 1px solid var(--line-strong);
   border-radius: 999px;
-  background: rgba(255,255,255,.55);
+  background: rgba(255,255,255,.7);
   color: var(--ink);
   font-family: var(--font-body);
   font-size: .88rem;
   font-weight: 600;
   line-height: 1;
   white-space: nowrap;
-  transition: border-color .18s ease, background-color .18s ease, color .18s ease, transform .18s ease;
+  flex: 0 0 44px;
+  transition: border-color .18s ease, background-color .18s ease,
+              color .18s ease, transform .18s ease;
 }
+
 .lang-switch:hover {
   border-color: var(--ink);
   background: #fff;
   transform: translateY(-1px);
 }
+
 html[dir="rtl"] .lang-switch {
   font-family: "Noto Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
-  font-size: .92rem;
-}
-.mobile-menu .lang-switch {
-  width: fit-content;
-  margin-top: 1rem;
-}
-@media (max-width: 900px) {
-  .nav-actions .lang-switch {
-    min-width: 44px;
-    height: 40px;
-    padding: 0 .65rem;
-  }
+  font-size: .9rem;
 }
 
-/* Keep mentor preview portraits anchored to the bottom on small screens,
-   eliminating the visible top gap caused by contain-height scaling. */
+/* The language button belongs in the header only.
+   Do not render a second copy inside the open mobile menu. */
+.mobile-menu > .lang-switch {
+  display: none !important;
+}
+
+/* Mentor preview portraits */
 @media (max-width: 760px) {
   .home-mentor-preview-photo img {
     width: 100%;
@@ -73,8 +86,177 @@ html[dir="rtl"] .lang-switch {
   }
 }
 
-/* Mentor credentials: readable on both directions */
 .mentor-card-role,
-.home-mentor-preview-body p { line-height: 1.55; }
+.home-mentor-preview-body p {
+  line-height: 1.55;
+}
+
 html[dir="rtl"] .home-mentor-preview-body p,
-html[dir="rtl"] .mentor-card-role { text-align: right; }
+html[dir="rtl"] .mentor-card-role {
+  text-align: right;
+}
+
+/* -----------------------------
+   Mobile viewport + navbar
+   ----------------------------- */
+@media (max-width: 900px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .nav {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .nav-inner {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: 74px;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    gap: .5rem;
+  }
+
+  .nav .brand {
+    min-width: 0;
+    flex: 1 1 auto;
+    overflow: hidden;
+  }
+
+  .nav .brand .brand-lockup {
+    display: block;
+    width: clamp(122px, 37vw, 150px);
+    max-width: 100%;
+    height: auto;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    min-width: 0;
+    margin-left: auto;
+    gap: .45rem;
+  }
+
+  /* Never let the desktop CTAs force the header wider than the phone. */
+  .nav-actions > .btn {
+    display: none !important;
+  }
+
+  .nav-actions .lang-switch {
+    display: inline-flex !important;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    padding: 0;
+    font-size: .84rem;
+  }
+
+  .nav-toggle {
+    display: flex !important;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 74px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: .65rem 1rem 2rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 99;
+    box-sizing: border-box;
+  }
+
+  .mobile-menu.is-open {
+    display: block !important;
+  }
+
+  .mobile-menu > a:not(.lang-switch) {
+    display: block !important;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .9rem 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink) !important;
+    text-decoration: none;
+  }
+
+  /* Explicit RTL alignment so the Arabic navigation never disappears
+     or falls outside the visible menu. */
+  html[dir="rtl"] .mobile-menu {
+    direction: rtl;
+    text-align: right;
+  }
+
+  html[dir="rtl"] .mobile-menu > a:not(.lang-switch) {
+    text-align: right;
+  }
+
+  html:not([dir="rtl"]) .mobile-menu {
+    direction: ltr;
+    text-align: left;
+  }
+
+  html:not([dir="rtl"]) .mobile-menu > a:not(.lang-switch) {
+    text-align: left;
+  }
+
+  .mobile-menu .cta-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100%;
+    margin-top: 1.15rem;
+    gap: .7rem;
+  }
+
+  .mobile-menu .cta-row .btn {
+    width: 100%;
+    min-height: 48px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-inner {
+    padding-left: .65rem;
+    padding-right: .65rem;
+    gap: .35rem;
+  }
+
+  .nav .brand .brand-lockup {
+    width: 124px;
+  }
+
+  .nav-actions {
+    gap: .3rem;
+  }
+
+  .mobile-menu {
+    padding-left: .8rem;
+    padding-right: .8rem;
+  }
+}
