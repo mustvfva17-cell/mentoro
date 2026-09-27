@@ -1,5 +1,4 @@
-﻿/* MENTORO bilingual navigation + mobile viewport fix
-   Built for the latest bilingual project version. */
+﻿/* MENTORO bilingual polish */
 
 html[dir="rtl"] body {
   font-family: "Noto Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
@@ -13,10 +12,7 @@ html[dir="rtl"] h4 {
   letter-spacing: 0;
 }
 
-/* Keep the global page geometry identical in both languages.
-   RTL applies to the navigation content, not the whole header order. */
 html[dir="rtl"] .nav-inner {
-  flex-direction: row;
   direction: ltr;
 }
 
@@ -26,7 +22,6 @@ html[dir="rtl"] .nav-links {
 }
 
 html[dir="rtl"] .nav-actions {
-  flex-direction: row;
   direction: ltr;
 }
 
@@ -68,7 +63,6 @@ html[dir="rtl"] .how-process-list li > span {
   white-space: nowrap;
 }
 
-/* Compact language switcher */
 .lang-switch {
   display: inline-flex;
   align-items: center;
@@ -102,12 +96,10 @@ html[dir="rtl"] .lang-switch {
   font-size: .9rem;
 }
 
-/* One language button only: the header is the canonical location. */
 .mobile-menu > .lang-switch {
   display: none !important;
 }
 
-/* Mentor preview portraits */
 @media (max-width: 760px) {
   .home-mentor-preview-photo img {
     width: 100%;
@@ -212,8 +204,9 @@ html[dir="rtl"] .mentor-card-role {
     min-width: 0;
     margin: 0;
     padding: .65rem 1rem 2rem;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
+    overscroll-behavior: none;
+    touch-action: none;
     z-index: 99;
     box-sizing: border-box;
   }
@@ -263,6 +256,31 @@ html[dir="rtl"] .mentor-card-role {
     width: 100%;
     min-height: 48px;
     box-sizing: border-box;
+  }
+
+  /* Physical lock: the open menu owns the viewport. */
+  html.menu-open {
+    overflow: hidden !important;
+    overscroll-behavior: none !important;
+  }
+
+  body.menu-open {
+    overflow: hidden !important;
+    overscroll-behavior: none !important;
+    touch-action: none;
+  }
+
+  /* Keep the header geometry identical in Arabic and English. */
+  html[dir="rtl"] .nav-inner {
+    direction: ltr;
+  }
+
+  html[dir="rtl"] .nav .brand {
+    direction: ltr;
+  }
+
+  html[dir="rtl"] .nav-actions {
+    direction: ltr;
   }
 }
 

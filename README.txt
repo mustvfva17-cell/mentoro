@@ -1,4 +1,7 @@
-1. Replace the existing bilingual-demo.css with this file.
-2. From the project root run: .\apply-arabic-nav-fix.ps1
-3. Test Arabic logo -> Arabic home, Arabic nav links, and the mobile header.
-4. Delete apply-arabic-nav-fix.ps1 after it succeeds.
+MENTORO mobile scroll-lock final fix
+
+Replace BOTH files in the current project:
+1) script.js
+2) bilingual-demo.css
+
+This version uses position: fixed + saved scroll position for a reliable mobile lock, and disables scrolling inside the open menu itself.
