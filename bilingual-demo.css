@@ -304,3 +304,67 @@ html[dir="rtl"] .mentor-card-role {
     padding-right: .8rem;
   }
 }
+
+
+
+/* Back to Top Button and Nav Scroll Elevation */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 90;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background: #101E36;
+  fill: #FAFAF8;
+  color: #FAFAF8;
+  box-shadow: 0 4px 14px rgba(16, 30, 54, 0.18);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top.is-visible:hover {
+  background: #A92332;
+  transform: translateY(-2px);
+}
+
+.back-to-top:focus-visible {
+  outline: 2px solid #A92332;
+  outline-offset: 2px;
+}
+
+html[dir="rtl"] .back-to-top,
+html[lang="ar"] .back-to-top {
+  right: auto;
+  left: 2rem;
+}
+
+@media (max-width: 480px) {
+  .back-to-top {
+    right: 1rem;
+  }
+
+  html[dir="rtl"] .back-to-top,
+  html[lang="ar"] .back-to-top {
+    left: 1rem;
+    right: auto;
+  }
+}
+
+.nav.is-scrolled {
+  box-shadow: 0 4px 20px rgba(16, 30, 54, 0.08);
+}

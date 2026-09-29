@@ -100,4 +100,43 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  /* Back to Top button & Nav scroll elevation */
+  var backToTop = document.createElement('button');
+  backToTop.className = 'back-to-top';
+  var isRtl = document.documentElement.lang === 'ar' || document.documentElement.getAttribute('dir') === 'rtl';
+  backToTop.setAttribute('aria-label', isRtl ? 'العودة إلى الأعلى' : 'Back to top');
+  backToTop.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>';
+  document.body.appendChild(backToTop);
+
+  backToTop.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  var nav = document.querySelector('.nav');
+  var ticking = false;
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        var scrollY = window.scrollY || window.pageYOffset;
+
+        if (scrollY > 350) {
+          backToTop.classList.add('is-visible');
+        } else {
+          backToTop.classList.remove('is-visible');
+        }
+
+        if (nav) {
+          if (scrollY > 20) {
+            nav.classList.add('is-scrolled');
+          } else {
+            nav.classList.remove('is-scrolled');
+          }
+        }
+
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
 });
