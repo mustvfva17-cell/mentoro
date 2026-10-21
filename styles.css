@@ -646,3 +646,70 @@
     transform: none !important;
   }
 } 
+
+
+/* Horizontal mentor carousels */
+.home-mentor-preview-grid,
+.current-mentors-grid {
+  display: flex;
+  gap: 1.15rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.35rem 0.15rem 1.25rem;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 0.15rem;
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(169,35,50,.55) rgba(16,30,54,.08);
+}
+.home-mentor-preview-grid > *,
+.current-mentors-grid > * {
+  flex: 0 0 clamp(270px, 31%, 360px);
+  min-width: 0;
+  scroll-snap-align: start;
+}
+.home-mentor-preview-grid .home-mentor-preview-card {
+  grid-template-columns: 1fr;
+  grid-template-rows: 230px auto;
+  min-height: 0;
+}
+.home-mentor-preview-grid .home-mentor-preview-photo {
+  min-height: 0;
+  height: 230px;
+}
+.current-mentors-grid .mentor-card-live {
+  min-width: 0;
+}
+.current-mentors-grid .mentor-network-note {
+  flex: 0 0 clamp(270px, 31%, 360px);
+  scroll-snap-align: start;
+}
+@media (max-width: 700px) {
+  .home-mentor-preview-grid,
+  .current-mentors-grid {
+    gap: .85rem;
+    margin-inline: -0.25rem;
+    padding-inline: .25rem;
+  }
+  .home-mentor-preview-grid > *,
+  .current-mentors-grid > * {
+    flex-basis: min(82vw, 330px);
+  }
+  .home-mentor-preview-grid .home-mentor-preview-card {
+    grid-template-rows: 205px auto;
+  }
+  .home-mentor-preview-grid .home-mentor-preview-photo {
+    height: 205px;
+  }
+  .current-mentors-grid .mentor-card-photo-wrap {
+    height: 270px;
+    min-height: 270px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-mentor-preview-grid,
+  .current-mentors-grid {
+    scroll-behavior: auto;
+  }
+}
