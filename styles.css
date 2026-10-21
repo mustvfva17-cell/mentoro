@@ -713,3 +713,49 @@
     scroll-behavior: auto;
   }
 }
+
+
+/* Side-arrow controls for mentor carousels */
+.mentor-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .65rem;
+  margin: 0 0 .85rem;
+}
+.mentor-carousel-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line-strong, #d7dbe2);
+  border-radius: 50%;
+  background: var(--paper, #fff);
+  color: var(--ink, #17243b);
+  font-size: 1.55rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm, 0 2px 8px rgba(16,30,54,.07));
+  transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+}
+.mentor-carousel-arrow:hover {
+  background: var(--mentoro-red, #c63c4b);
+  color: #fff;
+  border-color: var(--mentoro-red, #c63c4b);
+  transform: translateY(-1px);
+}
+.mentor-carousel-arrow:focus-visible {
+  outline: 3px solid rgba(198,60,75,.28);
+  outline-offset: 3px;
+}
+.mentor-carousel-arrow:disabled {
+  opacity: .35;
+  cursor: default;
+  transform: none;
+}
+.mentor-carousel-arrow:disabled:hover {
+  background: var(--paper, #fff);
+  color: var(--ink, #17243b);
+  border-color: var(--line-strong, #d7dbe2);
+}
