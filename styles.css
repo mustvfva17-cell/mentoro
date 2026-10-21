@@ -869,3 +869,60 @@
     min-height: 240px;
   }
 }
+
+
+/* Dedicated mentor directory carousel sizing */
+.how-profiles .mentor-carousel-shell {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-inline: 2.7rem;
+}
+.how-profiles .current-mentors-grid {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+.how-profiles .current-mentors-grid > .mentor-card-live,
+.how-profiles .current-mentors-grid > .mentor-network-note {
+  flex: 0 0 clamp(270px, 31%, 360px) !important;
+  width: auto !important;
+  max-width: none !important;
+}
+.how-profiles .current-mentors-grid .mentor-card-photo-wrap {
+  flex: 0 0 270px;
+  height: 270px;
+  min-height: 270px;
+  max-height: 270px;
+  overflow: hidden;
+}
+.how-profiles .current-mentors-grid .mentor-card-photo-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+.how-profiles .current-mentors-grid .mentor-card-content {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 700px) {
+  .how-profiles .mentor-carousel-shell {
+    padding-inline: 1.65rem;
+  }
+  .how-profiles .current-mentors-grid > .mentor-card-live,
+  .how-profiles .current-mentors-grid > .mentor-network-note {
+    flex-basis: min(78vw, 320px) !important;
+  }
+  .how-profiles .current-mentors-grid .mentor-card-photo-wrap {
+    flex-basis: 220px;
+    height: 220px;
+    min-height: 220px;
+    max-height: 220px;
+  }
+}
