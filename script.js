@@ -139,4 +139,25 @@ document.addEventListener('DOMContentLoaded', function () {
       ticking = true;
     }
   });
+
+  // Side-arrow controls for horizontally scrolling mentor carousels.
+  document.querySelectorAll('.mentor-carousel-controls').forEach(function(controls) {
+    var buttons = controls.querySelectorAll('.mentor-carousel-arrow');
+    if (!buttons.length) return;
+    var targetClass = buttons[0].getAttribute('data-carousel-target');
+    var carousel = targetClass ? document.querySelector('.' + targetClass) : null;
+    if (!carousel) return;
+
+    buttons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        var direction = button.classList.contains('mentor-carousel-next') ? 1 : -1;
+        var rtl = document.documentElement.lang === 'ar' || document.documentElement.getAttribute('dir') === 'rtl';
+        carousel.scrollBy({
+          left: direction * (rtl ? -1 : 1) * Math.max(280, carousel.clientWidth * 0.78),
+          behavior: 'smooth'
+        });
+      });
+    });
+  });
+
 });
