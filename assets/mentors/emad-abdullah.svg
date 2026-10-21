@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="720" viewBox="0 0 600 720" role="img" aria-labelledby="title desc">
-<title id="title">Dr. Emad Abdullah — portrait placeholder</title>
-<desc id="desc">Neutral placeholder image to replace with the physician's portrait.</desc>
-<rect width="600" height="720" fill="#eef1f5"/>
-<circle cx="300" cy="250" r="112" fill="#cbd3de"/>
-<path d="M105 650c8-142 83-220 195-220s187 78 195 220" fill="#cbd3de"/>
-<circle cx="300" cy="250" r="112" fill="none" stroke="#aeb9c8" stroke-width="4"/>
-<text x="300" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#66758a">Replace with portrait</text>
-</svg>
